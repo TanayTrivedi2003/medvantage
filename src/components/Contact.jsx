@@ -27,7 +27,7 @@ const Contact = () => {
                 {/* LEFT — IMAGE */}
                 <div className="flex items-center justify-center">
                     <img
-                        src="./src/assets/contact.jpg"
+                        src="./contact.jpg"
                         className="w-full h-[450px] object-cover rounded-xl shadow-lg"
                         alt="contact"
                     />
