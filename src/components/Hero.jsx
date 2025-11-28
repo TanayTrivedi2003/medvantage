@@ -3,23 +3,23 @@ import React, { useState, useEffect } from "react";
 const Hero = () => {
     const slides = [
         {
-            image: "./src/assets/bed.jpg",
+            image: "./bed.jpg",
             title: "Premium ICU Patient Bed",
             description: "Designed for maximum comfort and safety with advanced adjustable features.",
         },
         {
-            image: "./src/assets/babyTrolly.jpg",
+            image: "./babyTrolly.jpg",
             title: "Neonatal Baby Trolley",
             description: "Safe, hygienic and fully equipped trolley for newborn care and mobility.",
         },
         {
-            image: "./src/assets/iquipment.jpg",
+            image: "./iquipment.jpg",
             title: "Advanced Medical Equipment Setup",
             description: "Reliable, high-precision medical devices designed for efficient patient care.",
         },
 
         {
-            image: "./src/assets/wheelchair.jpg",
+            image: "./wheelchair.jpg",
             title: "Durable & Comfortable Wheelchair",
             description: "Lightweight, strong, and designed to provide effortless patient movement.",
         },

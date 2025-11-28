@@ -11,7 +11,7 @@ const Footer = () => {
                 {/* LOGO + ABOUT */}
                 <div>
                     <div className="flex items-center gap-1 mb-4">
-                        <img src="./src/assets/navLogo.png" alt="Logo" className="h-12" />
+                        <img src="./navLogo.png" alt="Logo" className="h-12" />
                         <h2 className=" font-bold tracking-wide">MediTech Solutions</h2>
                     </div>
 

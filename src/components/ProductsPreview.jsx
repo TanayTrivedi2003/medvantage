@@ -4,22 +4,22 @@ import { Link } from "react-router-dom"
 const ProductsPreview = () => {
     const products = [
         {
-            img: "./src/assets/bed1.jpg",
+            img: "./bed1.jpg",
             name: "ICU Bed",
             desc: "Advanced ICU bed with modern adjustable features.",
         },
         {
-            img: "./src/assets/patientsMonitor.jpg",
+            img: "./patientsMonitor.jpg",
             name: "Patient Monitor",
             desc: "High accuracy vitals monitoring system.",
         },
         {
-            img: "./src/assets/wheelchair.jpg",
+            img: "./wheelchair.jpg",
             name: "Wheelchair",
             desc: "Lightweight and highly durable wheelchair.",
         },
         {
-            img: "./src/assets/benchChair.jpg",
+            img: "./benchChair.jpg",
             name: "Emergency Trolley",
             desc: "Multi-purpose medical emergency trolley.",
         },
