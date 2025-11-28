@@ -10,14 +10,14 @@ const About = () => {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-center mb-12">
                 About{" "}
                 <span className="bg-gradient-to-r from-[#3A8DFF] to-[#32D3C8] bg-clip-text text-transparent">
-                 MedVantage
+                    MedVantage
                 </span>
             </h2>
 
             {/* About Section */}
             <div className="max-w-5xl mx-auto text-center">
                 <p className="text-lg sm:text-xl text-gray-700 leading-relaxed">
-                 MedVantage is committed to delivering advanced, safe, and reliable medical equipment
+                    MedVantage is committed to delivering advanced, safe, and reliable medical equipment
                     to hospitals, clinics, and healthcare institutions across India.
                     Our focus is on innovation, quality, and long-term trust — ensuring that every healthcare
                     professional has access to technology that supports excellent patient care.
@@ -104,27 +104,28 @@ const About = () => {
 
             {/* Stats */}
             <div className="flex flex-col sm:flex-row justify-center gap-12 mt-16 text-center">
-                <div>
+                {/* <div>
                     <h3 className="text-4xl font-extrabold bg-gradient-to-r from-[#3A8DFF] to-[#32D3C8] bg-clip-text text-transparent">
                         20+ Years
                     </h3>
                     <p className="text-gray-600">Industry Experience</p>
-                </div>
+                </div> */}
 
                 <div>
                     <h3 className="text-4xl font-extrabold bg-gradient-to-r from-[#3A8DFF] to-[#32D3C8] bg-clip-text text-transparent">
-                        10,000+
+                        1000+
                     </h3>
                     <p className="text-gray-600">Satisfied Clients</p>
                 </div>
             </div>
 
             {/* Support List */}
-            <div className="flex flex-row  items-center justify-center gap-3 mt-10 text-gray-600 text-lg">
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-3 mt-10 text-gray-600 text-lg">
                 <p>✔ 24/7 Technical Support</p>
                 <p>✔ Installation & Training</p>
                 <p>✔ ISO & CE Certified Products</p>
             </div>
+
 
             <AboutExtra />
 

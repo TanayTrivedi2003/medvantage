@@ -101,24 +101,24 @@ const Footer = () => {
 
                     <div className="flex items-start gap-3 mb-3">
                         <MdLocationPin size={20} className="text-[#32D3C8]" />
-                        <p className="text-gray-300 text-sm">Mumbai, India</p>
+                        <p className="text-gray-300 text-sm">Kanpur, India</p>
                     </div>
 
                     <div className="flex items-start gap-3 mb-3">
                         <MdPhone size={20} className="text-[#32D3C8]" />
-                        <p className="text-gray-300 text-sm">+91 98765 43210</p>
+                        <p className="text-gray-300 text-sm">+91 7355422924</p>
                     </div>
 
                     <div className="flex items-start gap-3">
                         <MdEmail size={20} className="text-[#32D3C8]" />
-                        <p className="text-gray-300 text-sm">support@meditech.com</p>
+                        <p className="text-gray-300 text-sm">support@medadvantage.com</p>
                     </div>
                 </div>
             </div>
 
             {/* BOTTOM COPYRIGHT BAR */}
             <div className="border-t border-white/20 mt-12 pt-5 text-center text-gray-400 text-sm">
-                © {new Date().getFullYear()} MedVantage. All Rights Reserved.
+                © {new Date().getFullYear()} Brandmate Digital. All Rights Reserved.
             </div>
         </footer>
     );
