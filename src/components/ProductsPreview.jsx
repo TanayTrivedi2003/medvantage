@@ -29,7 +29,7 @@ const ProductsPreview = () => {
         <section id="products"
             className="w-full py-16 px-6 sm:px-10 lg:px-20 bg-repeat"
             style={{
-                backgroundImage: "url('./src/assets/productbg.png')",
+                backgroundImage: "url('./productbg.png')",
                 backgroundSize: "800px",     // ⭐ image size small
             }}
         >
