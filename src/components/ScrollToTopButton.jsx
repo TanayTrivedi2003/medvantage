@@ -4,7 +4,6 @@ import { FaArrowUp } from "react-icons/fa";
 const ScrollToTopButton = () => {
     const [visible, setVisible] = useState(false);
 
-    // Show button when scrolled down
     useEffect(() => {
         const toggleVisibility = () => {
             if (window.scrollY > 300) {
@@ -18,29 +17,22 @@ const ScrollToTopButton = () => {
         return () => window.removeEventListener("scroll", toggleVisibility);
     }, []);
 
-    // Scroll to top function
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
     return (
-        <div>
+        <>
             {visible && (
                 <button
                     onClick={scrollToTop}
-                    className="
-                        fixed bottom-6 right-6
-                        bg-gradient-to-r from-[#3A8DFF] to-[#32D3C8]
-                        text-white p-4 rounded-full shadow-xl
-                        hover:scale-110 hover:shadow-2xl
-                        transition-all duration-300
-                        z-50
-                    "
+                    className="fixed bottom-6 right-4 w-12 h-12 flex items-center justify-center bg-linear-to-br from-[#3A8DFF] to-[#32D3C8] text-white rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300 z-50"
                 >
                     <FaArrowUp size={18} />
                 </button>
+
             )}
-        </div>
+        </>
     );
 };
 

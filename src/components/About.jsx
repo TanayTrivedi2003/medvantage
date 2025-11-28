@@ -4,7 +4,7 @@ import { FaProcedures, FaTools, FaHospitalSymbol } from "react-icons/fa";
 import AboutExtra from "./AboutExtra";
 const About = () => {
     return (
-        <section id="about" className="w-full bg-[#F7FBFF] py-16 px-6 sm:px-10 lg:px-20">
+        <section id="about" className="w-full bg-[#F7FBFF] py-16 px-4 sm:px-8 lg:px-12 overflow-x-hidden">
 
             {/* Title with Gradient */}
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-center mb-12">
