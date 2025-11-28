@@ -20,7 +20,7 @@ const Navbar = () => {
                     </div>
                     <div onClick={() => navigate("/")}>
 
-                        <span className="text-xl font-bold text-[#050B13]">MediTech Solutions</span>
+                        <span className="text-xl font-bold text-[#050B13]">MedVantage</span>
                     </div>
 
                 </div>

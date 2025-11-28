@@ -12,7 +12,7 @@ const Footer = () => {
                 <div>
                     <div className="flex items-center gap-1 mb-4">
                         <img src="./navLogo.png" alt="Logo" className="h-12" />
-                        <h2 className=" font-bold tracking-wide">MediTech Solutions</h2>
+                        <h2 className=" font-bold tracking-wide">MedVantage</h2>
                     </div>
 
                     <p className="text-gray-300 text-sm leading-relaxed text-justify">
@@ -118,7 +118,7 @@ const Footer = () => {
 
             {/* BOTTOM COPYRIGHT BAR */}
             <div className="border-t border-white/20 mt-12 pt-5 text-center text-gray-400 text-sm">
-                © {new Date().getFullYear()} MediTech Solutions. All Rights Reserved.
+                © {new Date().getFullYear()} MedVantage. All Rights Reserved.
             </div>
         </footer>
     );

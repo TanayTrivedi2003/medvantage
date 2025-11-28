@@ -10,14 +10,14 @@ const About = () => {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-center mb-12">
                 About{" "}
                 <span className="bg-gradient-to-r from-[#3A8DFF] to-[#32D3C8] bg-clip-text text-transparent">
-                    MediTech Solutions
+                 MedVantage
                 </span>
             </h2>
 
             {/* About Section */}
             <div className="max-w-5xl mx-auto text-center">
                 <p className="text-lg sm:text-xl text-gray-700 leading-relaxed">
-                    MediTech Solutions is committed to delivering advanced, safe, and reliable medical equipment
+                 MedVantage is committed to delivering advanced, safe, and reliable medical equipment
                     to hospitals, clinics, and healthcare institutions across India.
                     Our focus is on innovation, quality, and long-term trust — ensuring that every healthcare
                     professional has access to technology that supports excellent patient care.
