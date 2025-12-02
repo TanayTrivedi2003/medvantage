@@ -1,8 +1,29 @@
-import React from 'react'
-
+import React, { useState } from "react";
+import ProductsSlider from '../components/productsSlider'
+import ProductSearchFilter from '../components/ProductSearchFilter'
+import ProductsGrid from "../components/ProductsGrid";
 const Products = () => {
+
+
+    const [search, setSearch] = useState("");
+    const [category, setCategory] = useState("All");
     return (
-        <div>Product</div>
+        <>
+            <ProductsSlider />
+
+            <ProductSearchFilter
+                onSearch={setSearch}
+                onCategoryChange={setCategory}
+            />
+
+            <ProductsGrid
+                searchQuery={search}
+                selectedCategory={category}
+            />
+
+
+
+        </>
     )
 }
 

@@ -3,3 +3,11 @@ html,
 body {
   overflow-x: hidden;
 }
+
+/* input reusable style */
+.input-style {
+  @apply border border-gray-300 px-4 py-3 rounded-lg 
+         focus:ring-2 focus:ring-[#3A8DFF] 
+         outline-none
+         transition-all;
+}
