@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import ProductsSlider from "../components/ProductsSlider";
+
 import ProductSearchFilter from '../components/ProductSearchFilter'
 import ProductsGrid from "../components/ProductsGrid";
-import ProductsSlider from "../components/ProductsSlider";
 const Products = () => {
 
 
