@@ -5,7 +5,6 @@ import Layout from "./Layout/Layout";
 import Home from "./Pages/Home";
 import Products from "./Pages/Products";
 import ProductDetail from "./Pages/ProductDetail";
-import NotFound from "./Pages/NotFound";
 import WhatsAppFloat from "./components/whatsAppFloat";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import ScrollToTop from "./components/ScrollToTop";
@@ -26,8 +25,8 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="products" element={<Products />} />
           <Route path="product/:slug" element={<ProductDetail />} />
-          <Route path="*" element={<NotFound />} />
         </Route>
+
       </Routes>
 
       {/* ✅ FLOATING BUTTONS - SHOW ON EVERY PAGE */}
