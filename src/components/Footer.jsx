@@ -19,7 +19,16 @@ const Footer = () => {
                 {/* LOGO + ABOUT */}
                 <div>
                     <div className="flex items-center gap-1 mb-4">
-                        <img src="./navLogo.png" alt="Logo" className="h-12" />
+                        <img
+                            src="/navLogo.png"
+                            alt="Logo"
+                            loading="eager"
+                            fetchpriority="high"
+                            width="140"
+                            height="40"
+                            className="h-10 w-auto object-contain"
+                        />
+
                         <h2 className=" font-bold tracking-wide">MedVantage</h2>
                     </div>
 

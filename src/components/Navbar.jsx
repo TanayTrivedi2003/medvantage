@@ -16,7 +16,15 @@ const Navbar = () => {
                 <div className="flex items-center gap-2 cursor-pointer">
 
                     <div onClick={() => navigate("/")}>
-                        <img src="./navLogo.png" alt="Logo" className="h-12" />
+                        <img
+                            src="/navLogo.png"
+                            alt="Medvantage Logo"
+                            loading="eager"
+                            fetchpriority="high"
+                            width="160"
+                            height="48"
+                            className="h-12 w-auto object-contain"
+                        />
                     </div>
                     <div onClick={() => navigate("/")}>
 
