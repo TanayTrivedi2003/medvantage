@@ -12,6 +12,10 @@ import "./productsGrid.css";
 
 const ProductsGrid = () => {
     return (
+
+
+
+
         <section className="w-full bg-[#F7FBFF] pb-20 px-6 sm:px-10 lg:px-20">
 
             {categoriesData.map((cat, ci) => {
@@ -22,7 +26,7 @@ const ProductsGrid = () => {
                 const row2 = cat.products.slice(mid);
 
                 return (
-                    <div key={ci} className="mb-16">
+                    <div key={ci} className="mb-16 mt-10">
 
                         {/* Category Title */}
                         <h2
@@ -91,6 +95,8 @@ const ProductsGrid = () => {
 
 const ProductCard = ({ p }) => {
     return (
+
+
         <div
             className="
                 bg-white rounded-xl overflow-hidden

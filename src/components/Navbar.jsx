@@ -63,13 +63,17 @@ const Navbar = () => {
 
 
                     <li>
-
-                        <a
-                            className="bg-linear-to-r from-[#3A8DFF] to-[#32D3C8] text-white px-4 py-2 rounded-lg shadow-md transition-all duration-300 hover:from-[#62AFFF] hover:to-[#5BE2D4] hover:scale-105 hover:shadow-lg"
+                        <button
+                            onClick={() => navigate("/#contact")}
+                            className="bg-linear-to-r from-[#3A8DFF] to-[#32D3C8]
+      text-white px-4 py-2 rounded-lg shadow-md transition-all duration-300
+      hover:from-[#62AFFF] hover:to-[#5BE2D4]
+      hover:scale-105 hover:shadow-lg"
                         >
                             Contact Us
-                        </a>
+                        </button>
                     </li>
+
                 </ul>
 
                 {/* Mobile Toggle */}
@@ -87,11 +91,10 @@ const Navbar = () => {
 
                     <ul className="flex flex-col gap-4 text-[#004A99] font-medium">
 
-                        {/* Home */}
                         <li>
                             <button
                                 onClick={() => {
-                                    document.getElementById("hero")?.scrollIntoView({ behavior: "smooth" });
+                                    navigate("/");
                                     setOpen(false);
                                 }}
                                 className="py-2 block text-[#3A8DFF] hover:text-[#0155b0]"
@@ -100,11 +103,10 @@ const Navbar = () => {
                             </button>
                         </li>
 
-                        {/* About Us */}
                         <li>
                             <button
                                 onClick={() => {
-                                    document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
+                                    navigate("/#about");
                                     setOpen(false);
                                 }}
                                 className="py-2 block text-[#3A8DFF] hover:text-[#0155b0]"
@@ -113,11 +115,10 @@ const Navbar = () => {
                             </button>
                         </li>
 
-                        {/* Products */}
                         <li>
                             <button
                                 onClick={() => {
-                                    document.getElementById("products")?.scrollIntoView({ behavior: "smooth" });
+                                    navigate("/#products");
                                     setOpen(false);
                                 }}
                                 className="py-2 block text-[#3A8DFF] hover:text-[#0155b0]"
@@ -126,51 +127,26 @@ const Navbar = () => {
                             </button>
                         </li>
 
-                        {/* Services */}
                         <li>
                             <button
                                 onClick={() => {
-                                    document.getElementById("services")?.scrollIntoView({ behavior: "smooth" });
+                                    navigate("/#contact");
                                     setOpen(false);
                                 }}
-                                className="py-2 block text-[#3A8DFF] hover:text-[#0155b0]"
-                            >
-                                Services
-                            </button>
-                        </li>
-
-                        <li>
-                            <a
-                                onClick={() => setOpen(false)}
-                                className="w-full text-center bg-linear-to-r from-[#3A8DFF] to-[#32D3C8]
-                                text-white px-4 py-2 rounded-lg shadow-md hover:scale-105 transition block"
+                                className="
+        w-full text-center
+        bg-linear-to-r from-[#3A8DFF] to-[#32D3C8]
+        text-white px-4 py-2
+        rounded-lg shadow-md
+        hover:scale-105 transition block
+      "
                             >
                                 Contact Us
-                            </a>
+                            </button>
                         </li>
 
                     </ul>
 
-                    {/* <ul className="flex flex-col gap-4 font-medium">
-
-
-                        <li><a onClick={() => setOpen(false)} className="py-2 block  text-[#3A8DFF]  hover:text-[#0155b0] ">About Us</a></li>
-                        <li>
-                            <button
-                                onClick={() => {
-                                    document.getElementById("products")?.scrollIntoView({ behavior: "smooth" });
-                                    setOpen(false);
-                                }}
-                                className="py-2 block  text-[#3A8DFF]  hover:text-[#0155b0] "
-                            >
-                                Products
-                            </button>
-                        </li>
-                        <li><a onClick={() => setOpen(false)} className="py-2 block  text-[#3A8DFF]  hover:text-[#0155b0] ">Services</a></li>
-
-
-
-                    </ul> */}
                 </div>
             )}
         </header>

@@ -14,7 +14,7 @@ const AboutExtra = () => {
 
             {/* ⭐ MISSION SECTION */}
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-center mb-10">
-                Our <span className="bg-gradient-to-r from-[#3A8DFF] to-[#32D3C8] bg-clip-text text-transparent">Mission</span>
+                Our <span className="bg-linear-to-r from-[#3A8DFF] to-[#32D3C8] bg-clip-text text-transparent">Mission</span>
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -43,7 +43,7 @@ const AboutExtra = () => {
 
             {/* ⭐ WHY CHOOSE US */}
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-center mt-20 mb-12">
-                Why <span className="bg-gradient-to-r from-[#3A8DFF] to-[#32D3C8] bg-clip-text text-transparent">Choose Us</span>
+                Why <span className="bg-linear-to-r from-[#3A8DFF] to-[#32D3C8] bg-clip-text text-transparent">Choose Us</span>
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -76,7 +76,7 @@ const AboutExtra = () => {
             {/* ⭐ CERTIFICATIONS */}
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-center mt-20 mb-12">
                 Our{" "}
-                <span className="bg-gradient-to-r from-[#3A8DFF] to-[#32D3C8] bg-clip-text text-transparent">
+                <span className="bg-linear-to-r from-[#3A8DFF] to-[#32D3C8] bg-clip-text text-transparent">
                     Certifications
                 </span>
             </h2>

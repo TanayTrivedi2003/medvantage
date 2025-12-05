@@ -37,7 +37,7 @@ const ProductsPreview = () => {
             {/* Heading */}
             <h2 className="text-3xl sm:text-4xl font-extrabold text-center mb-12">
                 Our{" "}
-                <span className="bg-gradient-to-r from-[#3A8DFF] to-[#32D3C8] bg-clip-text text-transparent">
+                <span className="bg-linear-to-r from-[#3A8DFF] to-[#32D3C8] bg-clip-text text-transparent">
                     Products
                 </span>
             </h2>
@@ -67,7 +67,7 @@ const ProductsPreview = () => {
             <div className="text-center mt-10">
                 <Link
                     to="/products"
-                    className="inline-flex items-center gap-2 bg-gradient-to-r 
+                    className="inline-flex items-center gap-2 bg-linear-to-r 
                from-[#3A8DFF] to-[#32D3C8] text-white font-semibold px-6 py-3 
                rounded-lg shadow-md hover:shadow-xl hover:scale-[1.04] 
                transition-all duration-300"

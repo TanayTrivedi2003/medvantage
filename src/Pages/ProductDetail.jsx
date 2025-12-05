@@ -179,7 +179,9 @@ const ProductDetails = () => {
 
                     {/* WHATSAPP CTA */}
                     <a
-                        href={`https://wa.me/918299522798?text=Hi, I’m interested in ${encodeURIComponent(product.name)}`}
+                        href={`https://wa.me/917275233309?text=${encodeURIComponent(
+                            `Hello, I am interested in your product "${product.name}". Please share the best price and specifications.`
+                        )}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="

@@ -3,7 +3,7 @@ import { MessageCircle } from "lucide-react";
 
 const WhatsAppFloat = () => {
 
-    const phone = "917309180407"; // ✅ WhatsApp number (without +)
+    const phone = "917275233309"; // ✅ WhatsApp number (without +)
     const message = "Hello, I am interested in your MedVantage medical equipment. Please share more details.";
 
     const encodedMessage = encodeURIComponent(message);

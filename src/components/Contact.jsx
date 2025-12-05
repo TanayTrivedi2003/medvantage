@@ -11,35 +11,43 @@ const Contact = () => {
     const [message, setMessage] = useState("");
     const [alert, setAlert] = useState(false);
 
-    // ✅ SUBMIT HANDLER
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        const whatsappNumber = "918299522798"; // ✅ your number
+        const whatsappNumber = "917275233309";
 
-        const text = `
-New Website Enquiry
+        const text =
+            `New Website Enquiry
 
-Name: ${name}
-Phone: ${phone}
-Email: ${email}
+          Name: ${name}
+          Phone: ${phone}
+         Email: ${email}
 
-Message:
-${message}
-`;
+         Message:${message}`;
 
-        const waLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+        // ✅ Detect device
+        const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
+        // ✅ Build WhatsApp link based on device
+        const waLink = isMobile
+            ? `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`
+            : `https://web.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(text)}`;
+
+        // ✅ Open WhatsApp
         window.open(waLink, "_blank");
 
+        // ✅ Reset form
         setName("");
         setEmail("");
         setPhone("");
         setMessage("");
 
+        // ✅ Show success alert
         setAlert(true);
         setTimeout(() => setAlert(false), 4000);
     };
+
 
     return (
         <section
@@ -49,26 +57,16 @@ ${message}
 
             {/* ✅ SUCCESS ALERT */}
             {alert && (
-                <div className="
-          fixed z-[999]
-          top-5 right-5
-          bg-green-500
-          text-white
-          px-6 py-4
-          rounded-xl
-          shadow-xl
-          flex items-center gap-3
-          animate-bounce
-        ">
+                <div className="fixed z-[999] top-5 right-5 bg-green-500 text-white px-6 py-4 rounded-xl shadow-xl flex items-center gap-3 animate-bounce">
                     <MessageCircle size={18} />
                     Message sent successfully on WhatsApp!
                 </div>
             )}
 
-            {/* Title */}
+            {/* TITLE */}
             <h2 className="text-4xl sm:text-5xl font-extrabold text-center mb-6">
                 Get In{" "}
-                <span className="bg-gradient-to-r from-[#3A8DFF] to-[#32D3C8] bg-clip-text text-transparent">
+                <span className="bg-linear-to-r from-[#3A8DFF] to-[#32D3C8] bg-clip-text text-transparent">
                     Touch With Us
                 </span>
             </h2>
@@ -78,20 +76,22 @@ ${message}
                 medical equipment and dedicated customer support.
             </p>
 
-            {/* GRID */}
+            {/* FORM + IMAGE GRID */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-20">
 
-                {/* LEFT IMAGE */}
+                {/* IMAGE */}
                 <div className="flex items-center justify-center">
                     <img
                         src="./contact.jpg"
-                        className="
-              w-full h-[450px]
-              object-cover rounded-3xl
-              shadow-xl
-              hover:scale-105 transition-transform duration-500
-            "
                         alt="contact"
+                        className="
+                          w-full h-[420px]
+                          object-cover
+                          rounded-3xl
+                          shadow-xl
+                          hover:scale-105
+                          transition-transform duration-500
+                        "
                     />
                 </div>
 
@@ -143,30 +143,53 @@ ${message}
                         <button
                             type="submit"
                             className="
-                flex items-center justify-center gap-2
-                bg-gradient-to-r from-[#3A8DFF] to-[#32D3C8]
-                text-white font-semibold
-                px-6 py-3
-                rounded-xl shadow-md
-                hover:scale-105 hover:shadow-xl
-                transition-all
-              "
+                              flex items-center justify-center gap-2
+                              bg-linear-to-r from-[#3A8DFF] to-[#32D3C8]
+                              text-white font-semibold
+                              px-6 py-3
+                              rounded-xl shadow-md
+                              hover:scale-105 hover:shadow-xl
+                              transition-all
+                            "
                         >
-                            <MessageCircle size={18} /> Send Message
+                            <MessageCircle size={18} />
+                            Send Message
                         </button>
 
                     </form>
+
                 </div>
             </div>
 
-            {/* ✅ CONTACT DETAILS - PREMIUM */}
+            {/* ✅ CONTACT DETAILS */}
             <div className="max-w-6xl mx-auto">
-                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
-                    <ContactCard icon={<MdPhone size={22} />} label="Phone" value="+91 98765 43210" />
-                    <ContactCard icon={<MdEmail size={22} />} label="Email" value="healthcaremedvantage@gmail.com" />
-                    <ContactCard icon={<MdLocationPin size={22} />} label="Location" value="Kanpur, India" />
-                    <ContactCard icon={<FaRegClock size={20} />} label="Hours" value="Mon–Sat · 9AM–7PM" />
+                    <ContactCard
+                        icon={<MdPhone size={22} />}
+                        label="Phone"
+                        value={`+91 7275233309 \n +91 9506989899`}
+                    />
+
+
+                    <ContactCard
+                        icon={<MdEmail size={22} />}
+                        label="Email"
+                        value={`healthcaremedvantage@gmail.com `}
+                    />
+
+
+                    <ContactCard
+                        icon={<MdLocationPin size={22} />}
+                        label="Location"
+                        value="Kanpur, India"
+                    />
+
+                    <ContactCard
+                        icon={<FaRegClock size={20} />}
+                        label="Hours"
+                        value="Mon–Sat · 9AM–7PM"
+                    />
 
                 </div>
             </div>
@@ -175,32 +198,45 @@ ${message}
     );
 };
 
-/* ✅ CARD COMPONENT */
+/* ✅ CONTACT CARD */
 const ContactCard = ({ icon, label, value }) => (
-    <div className="
-    bg-white
-    p-6 rounded-2xl
-    shadow-md hover:shadow-2xl
-    hover:-translate-y-2
-    transition-all duration-300
-    flex items-center gap-4
-  ">
-        <div className="
-      p-3 rounded-full
-      bg-gradient-to-r from-[#3A8DFF] to-[#32D3C8]
-      text-white shadow
-    ">
+    <div
+        className="
+          bg-white
+          p-6
+          rounded-2xl
+          shadow-md hover:shadow-xl
+          transition-all duration-300
+          flex items-center gap-4
+          min-h-[90px]
+          break-words
+          overflow-hidden
+        "
+    >
+
+        {/* ICON */}
+        <div
+            className="
+              p-3 rounded-full
+              bg-linear-to-r from-[#3A8DFF] to-[#32D3C8]
+              text-white shadow
+              shrink-0
+            "
+        >
             {icon}
         </div>
 
-        <div>
-            <h3 className="text-[15px] font-semibold text-[#0A2540]">
+        {/* TEXT */}
+        <div className="flex-1 min-w-0">
+            <h3 className="text-[14px] font-semibold text-[#0A2540] mb-1 truncate">
                 {label}
             </h3>
-            <p className="text-sm text-gray-600">
+
+            <p className="text-sm text-gray-600 break-all leading-relaxed">
                 {value}
             </p>
         </div>
+
     </div>
 );
 
