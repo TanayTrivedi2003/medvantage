@@ -53,7 +53,10 @@ const ProductsGrid = () => {
                             className="mb-8"
                         >
                             {row1.map((p, i) => (
-                                <SwiperSlide key={i}>
+                                <SwiperSlide
+                                    key={i}
+                                    className="!h-auto !overflow-visible flex"
+                                >
                                     <ProductCard p={p} />
                                 </SwiperSlide>
                             ))}
