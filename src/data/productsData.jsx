@@ -9,7 +9,12 @@ const codeBaseMap = {
     "emergency-patient-trolleys": 600,
     "hospital-stools-foot-steps-utility-stands": 700,
     "commode-chairs-toileting-aids": 800,
-    "ot-instruments": 900,
+    "hospital-bed-accessories": 900,
+    "bedside-overbed": 1000,
+    "ot-surgical-ss": 1100,
+    "hospital-trolleys": 1200,
+    "ot-scrub-suction": 1300,
+    "ot-instruments": 1400,
 };
 
 export const categoriesData = [
@@ -2859,8 +2864,736 @@ export const categoriesData = [
 
 
 
+    {
+        title: "OT & Surgical Stainless Steel Products",
+        slug: "ot-surgical-ss",
+
+        products: [
+
+            // Product Code: MHC 1101
+            {
+                slug: "kidney-tray-ss",
+                name: "Kidney Tray (Stainless Steel)",
+                img: "/kidneytray1101.jpg",
+                desc: "Stainless steel kidney tray for surgical and dressing use.",
+                intro: "Used in hospitals for collecting instruments, dressings, and medical waste.",
+
+                features: [
+                    "Smooth rounded edges",
+                    "Easy to sterilize",
+                    "Reusable medical-grade SS",
+                    "Corrosion resistant"
+                ],
+
+                specs: {
+                    Material: "SS 304",
+                    Sizes: ["6\"", "8\"", "10\"", "12\""],
+                    Finish: "Mirror polished"
+                },
+
+                application: "OT, dressing room, wards."
+            },
+
+            // Product Code: MHC 1102
+            {
+                slug: "basin-ss",
+                name: "Basin (Stainless Steel)",
+                img: "/basin1102.png",
+                desc: "Round stainless steel basin used in medical procedures.",
+                intro: "Durable SS basin for holding liquids and instruments.",
+
+                features: [
+                    "Deep round shape",
+                    "Easy cleaning",
+                    "Rust free body",
+                    "Long service life"
+                ],
+
+                specs: {
+                    Material: "SS 304",
+                    Sizes: ["6\"", "8\"", "10\"", "12\"", "14\"", "16\""],
+                    Finish: "Polished"
+                },
+
+                application: "OTs, ICUs, nursing stations."
+            },
+
+            // Product Code: MHC 1103
+            {
+                slug: "instrument-tray-ss",
+                name: "Instrument Tray (Stainless Steel)",
+                img: "/instrumenttray1103.webp",
+                desc: "Rectangular stainless steel tray for surgical instruments.",
+                intro: "Designed for safe placement and transport of instruments.",
+
+                features: [
+                    "Rolled safety edges",
+                    "Autoclave safe",
+                    "Rigid SS construction",
+                    "Medical-grade finish"
+                ],
+
+                specs: {
+                    Material: "SS 304",
+                    Sizes: [
+                        "8\" × 6\" × 1.5\"",
+                        "9\" × 6\" × 1.5\"",
+                        "10\" × 7\" × 1.5\"",
+                        "12\" × 8\" × 1.5\""
+                    ],
+                    Finish: "Mirror polish"
+                },
+
+                application: "Operation theatres."
+            },
+
+            // Product Code: MHC 1104
+            {
+                slug: "catheter-tray-ss",
+                name: "Catheter Tray (Stainless Steel)",
+                img: "/cathetertray1104.png",
+                desc: "Specialized stainless steel tray for catheterization.",
+                intro: "Designed for hygienic catheter insertion procedures.",
+
+                features: [
+                    "Multiple compartments",
+                    "Easy sterilization",
+                    "Smooth SS finish",
+                    "Reusable design"
+                ],
+
+                specs: {
+                    Material: "SS 304",
+                    Sizes: ["8\" × 3\"", "16\" × 4\""],
+                    Finish: "Polished"
+                },
+
+                application: "Catheterization procedures."
+            },
+
+            // Product Code: MHC 1105
+            {
+                slug: "enema-can-ss",
+                name: "Enema Can (Stainless Steel)",
+                img: "/enemacan1105.png",
+                desc: "Stainless steel enema can for hospital use.",
+                intro: "Leak-proof enema can for medical procedures.",
+
+                features: [
+                    "Strong welded body",
+                    "Easy grip handle",
+                    "Rust resistant",
+                    "Medical-grade quality"
+                ],
+
+                specs: {
+                    Material: "SS 304",
+                    Capacity: ["1 Litre", "2 Litre"],
+                    Finish: "Mirror polish"
+                },
+
+                application: "Hospitals and nursing homes."
+            },
+
+            // Product Code: MHC 1106
+            {
+                slug: "sputum-mug-ss",
+                name: "Sputum Mug (Stainless Steel)",
+                img: "/sputummug1106.png",
+                desc: "Hygienic stainless steel sputum mug for patients.",
+                intro: "Designed for ease of use and cleaning.",
+
+                features: [
+                    "Smooth edges",
+                    "Easy handling",
+                    "Durable SS body",
+                    "Hygienic design"
+                ],
+
+                specs: {
+                    Material: "SS 304",
+                    Capacity: "Standard",
+                    Finish: "Polished"
+                },
+
+                application: "Patient wards and ICUs."
+            },
+
+            // Product Code: MHC 1107
+            {
+                slug: "lotion-bowl-ss",
+                name: "Lotion Bowl (Stainless Steel)",
+                img: "/lotionbowl1107.jpg",
+                desc: "Small stainless steel bowl for lotions and antiseptics.",
+                intro: "Used during dressing and surgical preparation.",
+
+                features: [
+                    "Compact size",
+                    "Easy to clean",
+                    "Rust resistant",
+                    "Reusable"
+                ],
+
+                specs: {
+                    Material: "SS 304",
+                    Size: "Standard",
+                    Finish: "Mirror polish"
+                },
+
+                application: "OTs and dressing rooms."
+            },
+
+            // Product Code: MHC 1108
+            {
+                slug: "bed-pan-with-cover-ss",
+                name: "Bed Pan with Cover (Stainless Steel)",
+                img: "/bedpan1108.webp",
+                desc: "Stainless steel bed pan with lid.",
+                intro: "Designed for hygienic patient care.",
+
+                features: [
+                    "Smooth patient-friendly design",
+                    "With cover",
+                    "Easy sanitization",
+                    "Durable SS body"
+                ],
+
+                specs: {
+                    Material: "SS 304",
+                    Type: "Male / Female",
+                    Cover: "Yes"
+                },
+
+                application: "Hospitals and nursing homes."
+            },
+
+            // Product Code: MHC 1109
+            {
+                slug: "urinal-pot-ss",
+                name: "Urinal Pot (Male / Female)",
+                img: "/urinalpot1109.png",
+                desc: "Stainless steel urinal pot for patient use.",
+                intro: "Ergonomic design for comfort and hygiene.",
+
+                features: [
+                    "Easy handling",
+                    "Spill resistant",
+                    "Durable SS",
+                    "Low maintenance"
+                ],
+
+                specs: {
+                    Material: "SS 304",
+                    Type: "Male / Female",
+                    Capacity: "Standard"
+                },
+
+                application: "Patient rooms."
+            },
+
+            // Product Code: MHC 1110
+            {
+                slug: "cidex-tray-with-lid",
+                name: "Cidex Tray with Lid",
+                img: "/cidextray1110.webp",
+                desc: "Stainless steel tray for instrument disinfection.",
+                intro: "Used for soaking instruments in disinfectant solution.",
+
+                features: [
+                    "Tight-fitting lid",
+                    "Chemical resistant",
+                    "Easy handling",
+                    "Medical-grade SS"
+                ],
+
+                specs: {
+                    Material: "SS 304",
+                    Sizes: [
+                        "10\" × 5\" × 3\"",
+                        "12\" × 6\" × 3\"",
+                        "16\" × 8\" × 3\""
+                    ],
+                    Finish: "Matt polish"
+                },
+
+                application: "OT and CSSD."
+            },
+
+            // Product Code: MHC 1111
+            {
+                slug: "formalin-chamber",
+                name: "Formalin Chamber 3 Tray",
+                img: "/formalinchamber1111.png",
+                desc: "Formalin chamber for OT fumigation.",
+                intro: "Used for safe and controlled OT fumigation.",
+
+                features: [
+                    "Leak-proof design",
+                    "Heavy-duty structure",
+                    "Safe fumigation support",
+                    "Industrial medical grade"
+                ],
+
+                specs: {
+                    Material: "SS / Acrylic",
+                    Sizes: [
+
+                        "3 Tray",
+
+                    ],
+                    Mounting: "Wall mounted"
+                },
+
+                application: "Operation theatres."
+            },
+            {
+                slug: "formalin-chamber",
+                name: "Formalin Chamber 2 Tray",
+                img: "/formalinchamber1112.webp",
+                desc: "Formalin chamber for OT fumigation.",
+                intro: "Used for safe and controlled OT fumigation.",
+
+                features: [
+                    "Leak-proof design",
+                    "Heavy-duty structure",
+                    "Safe fumigation support",
+                    "Industrial medical grade"
+                ],
+
+                specs: {
+                    Material: "SS / Acrylic",
+                    Sizes: [
+
+                        "2 Tray",
+
+                    ],
+                    Mounting: "Wall mounted"
+                },
+
+                application: "Operation theatres."
+            }
+
+        ]
+    },
 
 
+    {
+        title: "Hospital Trolleys & Ward Accessories",
+        slug: "hospital-trolleys",
+
+        products: [
+
+            // Product Code: MHC 1201
+            {
+                slug: "ecg-trolley-one-drawer",
+                name: "ECG Trolley with One Drawer",
+                img: "/ecgtrolley1201.png",
+                desc: "ECG trolley with drawer and shelves for medical equipment.",
+                intro: "Compact ECG trolley designed for smooth movement and organized storage.",
+
+                features: [
+                    "One storage drawer",
+                    "Two open shelves",
+                    "Smooth castor wheels",
+                    "Sturdy MS / SS frame"
+                ],
+
+                specs: {
+                    Material: "MS / SS",
+                    Drawers: "1",
+                    Shelves: "2",
+                    Wheels: "4 castors"
+                },
+
+                application: "ECG monitoring and diagnostic procedures."
+            },
+
+            // Product Code: MHC 1202
+            {
+                slug: "medicine-trolley-four-drawer",
+                name: "Medicine Trolley with Four Drawers",
+                img: "/medicinetrolley1202.png",
+                desc: "Hospital medicine trolley with four drawers.",
+                intro: "Designed for safe and organized medicine distribution in wards.",
+
+                features: [
+                    "Four smooth sliding drawers",
+                    "Spacious shelves",
+                    "Easy mobility",
+                    "Durable medical-grade body"
+                ],
+
+                specs: {
+                    Material: "MS / SS",
+                    Drawers: "4",
+                    Shelves: "2",
+                    Wheels: "4 castors with brakes"
+                },
+
+                application: "Hospital wards and nursing stations."
+            },
+
+            // Product Code: MHC 1203
+            {
+                slug: "instrument-trolley-three-shelf",
+                name: "Instrument Trolley (Three Shelves)",
+                img: "/instrumenttrolley1203.png",
+                desc: "Three-shelf stainless steel instrument trolley.",
+                intro: "Ideal for carrying instruments in OT and procedure rooms.",
+
+                features: [
+                    "Three SS shelves",
+                    "Rounded safety edges",
+                    "Easy to clean",
+                    "Smooth rolling wheels"
+                ],
+
+                specs: {
+                    Material: "Stainless Steel",
+                    Shelves: "3",
+                    Finish: "Polished",
+                    Wheels: "4 castors"
+                },
+
+                application: "Operation theatres and treatment rooms."
+            },
+
+            // Product Code: MHC 1204
+            {
+                slug: "instrument-trolley-two-shelf",
+                name: "Instrument Trolley (Two Shelves)",
+                img: "/instrumenttrolley1204.png",
+                desc: "Two-shelf instrument trolley for hospital use.",
+                intro: "Lightweight and durable trolley for daily hospital operations.",
+
+                features: [
+                    "Two stainless steel shelves",
+                    "Compact design",
+                    "Easy handling",
+                    "Rust resistant body"
+                ],
+
+                specs: {
+                    Material: "Stainless Steel",
+                    Shelves: "2",
+                    Finish: "Polished",
+                    Wheels: "4 castors"
+                },
+
+                application: "OTs, clinics, and wards."
+            },
+
+            // Product Code: MHC 1205
+            {
+                slug: "dressing-trolley",
+                name: "Dressing Trolley",
+                img: "/dressingtrolley1205.png",
+                desc: "Hospital dressing trolley with accessories.",
+                intro: "Designed for efficient wound dressing and patient care.",
+
+                features: [
+                    "SS top tray",
+                    "Bowl and bucket holders",
+                    "Strong tubular frame",
+                    "Easy mobility"
+                ],
+
+                specs: {
+                    Material: "Stainless Steel",
+                    Shelves: "2",
+                    Accessories: "Bowl & bucket",
+                    Wheels: "4 castors"
+                },
+
+                application: "Dressing rooms and wards."
+            },
+
+            // Product Code: MHC 1206
+            {
+                slug: "monitor-trolley",
+                name: "Monitor Trolley",
+                img: "/monitortrolley1206.png",
+                desc: "Multi-shelf trolley for patient monitoring equipment.",
+                intro: "Designed to hold monitors and medical devices securely.",
+
+                features: [
+                    "Multiple shelves",
+                    "Cable management design",
+                    "Stable base structure",
+                    "Smooth movement"
+                ],
+
+                specs: {
+                    Material: "MS / SS",
+                    Shelves: "Multiple",
+                    Height: "Standard",
+                    Wheels: "4 castors with brake"
+                },
+
+                application: "ICUs and critical care units."
+            },
+
+            // Product Code: MHC 1207
+            {
+                slug: "bed-side-screen-three-panel",
+                name: "Bed Side Screen (Three Panel)",
+                img: "/bedsidescreen1207.png",
+                desc: "Three-panel bedside privacy screen.",
+                intro: "Provides privacy for patients in wards and ICUs.",
+
+                features: [
+                    "Three foldable panels",
+                    "Smooth curtain fabric",
+                    "Stable frame",
+                    "Easy movement"
+                ],
+
+                specs: {
+                    Material: "MS frame + fabric",
+                    Panels: "3",
+                    Height: "Standard hospital height",
+                    Wheels: "Yes"
+                },
+
+                application: "Hospital wards and ICUs."
+            },
+
+            // Product Code: MHC 1208
+            {
+                slug: "bed-side-screen-four-panel",
+                name: "Bed Side Screen (Four Panel)",
+                img: "/bedsidescreen1208.png",
+                desc: "Four-panel movable bedside screen.",
+                intro: "Extra coverage privacy screen for patient areas.",
+
+                features: [
+                    "Four foldable panels",
+                    "Durable fabric curtains",
+                    "Smooth castor wheels",
+                    "Strong frame"
+                ],
+
+                specs: {
+                    Material: "MS frame + fabric",
+                    Panels: "4",
+                    Height: "Standard",
+                    Wheels: "Yes"
+                },
+
+                application: "ICUs and private wards."
+            },
+
+            // Product Code: MHC 1209
+            {
+                slug: "oxygen-cylinder-trolley",
+                name: "Oxygen Cylinder Trolley",
+                img: "/oxygencylindertrolley1209.png",
+                desc: "Trolley for safe movement of oxygen cylinders.",
+                intro: "Designed for easy handling and transport of oxygen cylinders.",
+
+                features: [
+                    "Strong tubular frame",
+                    "Secure cylinder holding ring",
+                    "Lightweight design",
+                    "Easy maneuverability"
+                ],
+
+                specs: {
+                    Material: "MS / SS",
+                    Capacity: "Single cylinder",
+                    Wheels: "2 heavy-duty wheels",
+                    Handle: "Yes"
+                },
+
+                application: "Hospitals, emergency and ICU areas."
+            },
+
+            // Product Code: MHC 1210
+            {
+                slug: "linen-change-trolley",
+                name: "Linen Change Trolley",
+                img: "/linenchangetrolley1210.png",
+                desc: "Trolley for collection and transport of used linen.",
+                intro: "Ensures hygienic linen handling in hospitals.",
+
+                features: [
+                    "Spacious linen compartment",
+                    "Easy movement",
+                    "Durable frame",
+                    "Easy to clean"
+                ],
+
+                specs: {
+                    Material: "MS / SS",
+                    Compartments: "Single",
+                    Wheels: "4 castors",
+                    BagType: "Cloth / canvas"
+                },
+
+                application: "Hospital housekeeping services."
+            },
+
+            // Product Code: MHC 1211
+            {
+                slug: "linen-trolley-canvas-bag",
+                name: "Linen Trolley with Canvas Bag",
+                img: "/linentrolley1211.png",
+                desc: "Linen trolley fitted with removable canvas bag.",
+                intro: "Designed for hygienic linen collection and transport.",
+
+                features: [
+                    "Removable canvas bag",
+                    "Strong frame",
+                    "Large capacity",
+                    "Smooth wheels"
+                ],
+
+                specs: {
+                    Material: "MS frame",
+                    BagType: "Canvas",
+                    Capacity: "Large",
+                    Wheels: "4 castors"
+                },
+
+                application: "Hospitals and nursing homes."
+            },
+
+            // Product Code: MHC 1212
+            {
+                slug: "linen-trolley-plastic-bucket",
+                name: "Linen Trolley with Plastic Bucket",
+                img: "/linentrolley1212.png",
+                desc: "Linen trolley with durable plastic bucket.",
+                intro: "Easy to clean linen trolley for hospital use.",
+
+                features: [
+                    "High-quality plastic bucket",
+                    "Rust-resistant frame",
+                    "Easy handling",
+                    "Low maintenance"
+                ],
+
+                specs: {
+                    Material: "MS / SS frame",
+                    BucketType: "Plastic",
+                    Capacity: "Standard",
+                    Wheels: "4 castors"
+                },
+
+                application: "Hospital laundry and wards."
+            }
+
+        ]
+    },
+
+    {
+        title: "OT Scrub Units & Suction Apparatus",
+        slug: "ot-scrub-suction",
+
+        products: [
+
+            // Product Code: MHC 1220
+            {
+                slug: "one-bay-scrub-sensor-foot-operated",
+                name: "One Bay Scrub Sink (Sensor / Foot Operated)",
+                img: "/scrubsink1220.png",
+                desc: "One bay stainless steel scrub sink with sensor or foot operation.",
+                intro: "Designed for hygienic hand washing in operation theatres with touch-free operation.",
+
+                features: [
+                    "Sensor or foot operated system",
+                    "Thermostatic mixer",
+                    "Splash-proof SS design",
+                    "Easy to clean and maintain"
+                ],
+
+                specs: {
+                    Material: "Stainless Steel (SS 304)",
+                    Operation: "Sensor / Foot operated",
+                    Mixer: "Thermostatic mixer",
+                    Bays: "Single bay"
+                },
+
+                application: "Operation theatres and sterile areas."
+            },
+
+            // Product Code: MHC 1221
+            {
+                slug: "one-bay-mini-scrub-sink",
+                name: "One Bay Mini Scrub Sink",
+                img: "/scrubsink1221.png",
+                desc: "Compact stainless steel mini scrub sink for OT use.",
+                intro: "Space-saving scrub sink ideal for small OTs and procedure rooms.",
+
+                features: [
+                    "Compact design",
+                    "Wall mounted structure",
+                    "Smooth SS finish",
+                    "Hygienic hand wash solution"
+                ],
+
+                specs: {
+                    Material: "Stainless Steel (SS 304)",
+                    Mounting: "Wall mounted",
+                    Operation: "Manual / elbow tap",
+                    Bays: "Single bay"
+                },
+
+                application: "OTs, procedure rooms, clinics."
+            },
+
+            // Product Code: MHC 1222
+            {
+                slug: "suction-apparatus-0-50-hp",
+                name: "Suction Apparatus 0.50 H.P",
+                img: "/suction1222.png",
+                desc: "Medical suction apparatus with 0.50 HP motor.",
+                intro: "Powerful suction unit designed for OT and emergency procedures.",
+
+                features: [
+                    "High suction efficiency",
+                    "Dual collection jars",
+                    "Oil-free pump",
+                    "Easy portability"
+                ],
+
+                specs: {
+                    MotorPower: "0.50 H.P",
+                    Jars: "Two collection jars",
+                    VacuumGauge: "Yes",
+                    Mobility: "Portable trolley base"
+                },
+
+                application: "Operation theatres, emergency rooms, ICUs."
+            },
+
+            // Product Code: MHC 1223
+            {
+                slug: "suction-apparatus-0-20-hp",
+                name: "Suction Apparatus 0.20 H.P",
+                img: "/suction1223.png",
+                desc: "Compact suction apparatus with 0.20 HP motor.",
+                intro: "Reliable suction unit for minor procedures and clinical use.",
+
+                features: [
+                    "Compact and lightweight",
+                    "Dual suction jars",
+                    "Low noise operation",
+                    "Easy to operate controls"
+                ],
+
+                specs: {
+                    MotorPower: "0.20 H.P",
+                    Jars: "Two collection jars",
+                    VacuumGauge: "Yes",
+                    Mobility: "Portable"
+                },
+
+                application: "Clinics, nursing homes, minor OTs."
+            }
+
+        ]
+    },
 
 
     {
