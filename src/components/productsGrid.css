@@ -12,7 +12,7 @@
   position: absolute;
   top: 0;
   left: -75%;
-  height: 100%;
+  height: 100;
   width: 50%;
 
   background: linear-gradient(
@@ -34,4 +34,9 @@
   100% {
     left: 125%;
   }
+}
+/* Fix Swiper slide height issue */
+.swiper-slide {
+  height: auto !important;
+  overflow: visible !important;
 }

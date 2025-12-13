@@ -76,7 +76,10 @@ const ProductsGrid = () => {
                                 }}
                             >
                                 {row2.map((p, i) => (
-                                    <SwiperSlide key={i}>
+                                    <SwiperSlide
+                                        key={i}
+                                        className="!h-auto !overflow-visible flex"
+                                    >
                                         <ProductCard p={p} />
                                     </SwiperSlide>
                                 ))}
@@ -106,7 +109,7 @@ const ProductCard = ({ p }) => {
                 shadow-md hover:shadow-xl
                 transition-all duration-500 ease-out
                 relative flex flex-col
-                h-full min-h-[360px]
+                h-full 
             "
         >
 

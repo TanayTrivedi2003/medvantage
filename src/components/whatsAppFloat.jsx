@@ -13,20 +13,11 @@ const WhatsAppFloat = () => {
             href={`https://wa.me/${phone}?text=${encodedMessage}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="
-        fixed bottom-20 right-5 z-[999]
-        w-14 h-14
-        bg-[#25D366]
-        text-white
-        flex items-center justify-center
-        rounded-full
-        shadow-xl
-        hover:shadow-2xl hover:scale-110
-        transition-all duration-300
-      "
+            className=" fixed bottom-20 right-5 z-[999] w-14 h-14  text-white flex items-center justify-center rounded-full shadow-xl hover:shadow-2xl hover:scale-110 transition-all duration-300 "
             title="Chat on WhatsApp"
         >
-            <MessageCircle size={26} />
+            <img src="/whatsapp.png" className="w-13 h13" />
+
         </a>
     );
 };

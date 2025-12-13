@@ -2346,7 +2346,7 @@ export const categoriesData = [
 
         products: [
             {
-                // MCA Product Code: MHC-941
+                // MCA Product Code: MHC-901
                 slug: "mattress-fowler-icu-bed",
 
                 name: "Mattress – Fowler / ICU Bed",
@@ -2375,11 +2375,11 @@ export const categoriesData = [
                     "Used on ICU and Fowler beds for patient comfort during treatment and prolonged hospitalization."
             },
             {
-                // MCA Product Code: MHC-942
+                // MCA Product Code: MHC-902
                 slug: "mattress-plain-bed",
 
                 name: "Mattress – Plain Hospital Bed",
-                img: "/accessory-mattress-plain.jpg",
+                img: "/mattress2.webp",
                 desc: "Standard foam mattress for plain hospital beds",
 
                 intro:
@@ -2404,11 +2404,11 @@ export const categoriesData = [
                     "Used for patient comfort on plain hospital beds in wards, nursing homes, and clinics."
             },
             {
-                // MCA Product Code: MHC-943
+                // MCA Product Code: MHC-903
                 slug: "patient-case-sheet-holder",
 
                 name: "Patient Case Sheet Holder",
-                img: "/case-sheet-holder.jpg",
+                img: "/sheetholder903.jpeg",
                 desc: "Aluminium patient file holder",
 
                 intro:
@@ -2433,11 +2433,11 @@ export const categoriesData = [
 
 
             {
-                // MCA Product Code: MHC-944
+                // MCA Product Code: MHC-904
                 slug: "protective-bed-railing-aluminium",
 
                 name: "Protective Bed Railing – Aluminium",
-                img: "/protective-railing.jpg",
+                img: "/bedRaling904.webp",
                 desc: "Aluminium safety side railing",
 
                 intro:
@@ -2461,11 +2461,11 @@ export const categoriesData = [
                     "Installed on hospital beds to ensure patient safety and fall prevention."
             },
             {
-                // MCA Product Code: MHC-945
+                // MCA Product Code: MHC-905
                 slug: "iv-rod-hospital-bed",
 
                 name: "IV Rod for Hospital Bed",
-                img: "/iv-rod.jpg",
+                img: "/ivrod905.jpeg",
                 desc: "Telescopic IV stand for bed mounting",
 
                 intro:
@@ -2489,11 +2489,11 @@ export const categoriesData = [
             },
 
             {
-                // MCA Product Code: MHC-946
+                // MCA Product Code: MHC-906
                 slug: "abs-tuck-away-railing-4pcs",
 
                 name: "ABS Tuck Away Railing – Set of 4",
-                img: "/abs-railing-4pcs.jpg",
+                img: "/absrailing4pcs906.webp",
                 desc: "ABS foldable side railing set",
 
                 intro:
@@ -2517,11 +2517,11 @@ export const categoriesData = [
                     "Used on ICU beds and Fowler beds to provide full side safety protection."
             },
             {
-                // MCA Product Code: MHC-947
+                // MCA Product Code: MHC-907
                 slug: "abs-head-foot-panel-deluxe",
 
                 name: "ABS Head & Foot Panel – Deluxe",
-                img: "/abs-panel-deluxe.jpg",
+                img: "/abs-panel-delux907.webp",
                 desc: "ABS head foot panels with safety buffer",
 
                 intro:
@@ -2544,11 +2544,11 @@ export const categoriesData = [
                     "Used as aesthetic and safety head/foot panels on ICU and Fowler hospital beds."
             },
             {
-                // MCA Product Code: MHC-948
+                // MCA Product Code: MHC-908
                 slug: "abs-tuck-away-railing-2pcs",
 
                 name: "ABS Tuck Away Railing – Set of 2",
-                img: "/abs-railing-2pcs.jpg",
+                img: "/abs-railing-2pcs908.webp",
                 desc: "ABS foldable railing pair",
 
                 intro:
@@ -2574,6 +2574,293 @@ export const categoriesData = [
 
         ]
     },
+    {
+        title: "Bed Side Lockers & Over Bed Tables",
+        slug: "bedside-overbed",
+
+        products: [
+
+            // Product Code: MHC 1001
+            {
+                slug: "bed-side-locker-laminated-top",
+                name: "Bed Side Locker (Laminated Top)",
+                img: "/bedsidelocker1001.jpg",
+                desc: "Bedside locker with laminated top and storage sections.",
+                intro: "A durable laminated-top bedside locker designed for daily hospital use.",
+
+                features: [
+                    "Smooth laminated top",
+                    "Durable MS frame",
+                    "Lower cabinet with shutter",
+                    "Mounted on silent castors"
+                ],
+
+                specs: {
+                    Material: "MS + Laminated top",
+                    Wheels: "Yes, 4 castors",
+                    Storage: "1 open shelf + 1 closed compartment",
+                    Finish: "Powder coated"
+                },
+
+                application: "Hospital patient rooms and general wards."
+            },
+
+            // Product Code: MHC 1002
+            {
+                slug: "bed-side-locker-ss-top",
+                name: "Bed Side Locker (SS Top)",
+                img: "/bedsidelocker1002.jpeg",
+                desc: "Stainless steel top bedside locker with open shelves.",
+                intro: "Strong stainless-steel top locker designed for hygienic environments.",
+
+                features: [
+                    "Full stainless steel top",
+                    "Dual open shelves",
+                    "Easy-clean surface",
+                    "Sturdy and rust-resistant"
+                ],
+
+                specs: {
+                    Material: "Stainless Steel",
+                    Shelves: "Two open shelves",
+                    Wheels: "Optional",
+                    Usage: "Indoor hospital use"
+                },
+
+                application: "Hospital and nursing home use."
+            },
+
+            // Product Code: MHC 1003
+            {
+                slug: "bed-side-locker-deluxe",
+                name: "Bed Side Locker (Deluxe)",
+                img: "/bedsidelocker1003.jpeg",
+                desc: "Premium bedside locker with drawers and wooden front.",
+                intro: "Super deluxe bedside locker featuring smooth drawers and premium finish.",
+
+                features: [
+                    "Two smooth sliding drawers",
+                    "Wooden laminated finish",
+                    "Silent wheels for movement",
+                    "Durable structure"
+                ],
+
+                specs: {
+                    Material: "MS + Wooden laminate",
+                    Drawers: "2 drawers",
+                    Wheels: "4 castors",
+                    Finish: "Premium coating"
+                },
+
+                application: "ICU, wards, and premium patient rooms."
+            },
+
+            // Product Code: MHC 1004
+            {
+                slug: "bed-side-locker-drawer-railing",
+                name: "Bed Side Locker With Drawer & Railing",
+                img: "/bedsidelocker1004.png",
+                desc: "Bedside locker with steel railing and storage.",
+                intro: "A strong MS bedside locker equipped with railing and spacious storage.",
+
+                features: [
+                    "Top stainless-steel railing",
+                    "One drawer + lower cabinet",
+                    "Anti-rust coated body",
+                    "Easy mobility design"
+                ],
+
+                specs: {
+                    Material: "MS + SS railing",
+                    Storage: "Drawer + cabinet",
+                    Wheels: "Yes",
+                    Finish: "Powder coated"
+                },
+
+                application: "General, private, and specialty hospital rooms."
+            },
+
+            // Product Code: MHC 1005
+            {
+                slug: "over-bed-table-pneumatic",
+                name: "Over Bed Table (Pneumatically Adjustable)",
+                img: "/bedsidetable1005.png",
+                desc: "Height adjustable over-bed table using pneumatic mechanism.",
+                intro: "Pneumatic lift allows smooth, effortless height adjustment.",
+
+                features: [
+                    "Gas-spring lifting system",
+                    "Stable heavy-duty base",
+                    "Scratch-resistant laminated top",
+                    "Smooth-rolling wheels"
+                ],
+
+                specs: {
+                    Adjustment: "Pneumatic lift",
+                    Material: "MS frame + laminated top",
+                    Wheels: "4 castors",
+                    TopSize: "Standard hospital size"
+                },
+
+                application: "Meals, writing, reading for bedridden patients."
+            },
+
+            // Product Code: MHC 1006
+            {
+                slug: "over-bed-table-gear-adjusted",
+                name: "Over Bed Table (Gear Adjusted)",
+                img: "/bedtable1006.png",
+                desc: "Over-bed table with gear-operated height adjustment.",
+                intro: "Manual gear mechanism allows precise height control.",
+
+                features: [
+                    "Gear-based height adjust",
+                    "Wide laminated top surface",
+                    "Stable tubular frame",
+                    "Anti-corrosion treatment"
+                ],
+
+                specs: {
+                    Adjustment: "Gear-based",
+                    Material: "MS + laminated top",
+                    Wheels: "4 castors",
+                    HeightRange: "Adjustable"
+                },
+
+                application: "Hospitals, nursing homes, patient wards."
+            },
+
+            // Product Code: MHC 1007
+            {
+                slug: "over-bed-table-standard",
+                name: "Over Bed Table (Standard)",
+                img: "/bedtable1007.png",
+                desc: "Basic over-bed table with lightweight structure.",
+                intro: "Simple and functional over-bed table suitable for all patient types.",
+
+                features: [
+                    "Lightweight frame",
+                    "Smooth top surface",
+                    "Easy to move",
+                    "Low maintenance"
+                ],
+
+                specs: {
+                    Material: "MS + laminated top",
+                    Height: "Fixed or semi-adjustable",
+                    Wheels: "Yes",
+                    BaseDesign: "H-shape for stability"
+                },
+
+                application: "General ward and home-care patient support."
+            },
+
+            // Product Code: MHC 1008
+            {
+                slug: "over-bed-table-two-section",
+                name: "Over Bed Table (Two Section Adjustable)",
+                img: "/bedtable1008.png",
+                desc: "Over-bed table with two-section adjustable top.",
+                intro: "Tilting two-panel top for reading, eating, and multi-purpose use.",
+
+                features: [
+                    "Two adjustable top sections",
+                    "Anti-slip surface",
+                    "Strong steel legs",
+                    "Smooth adjustable hinge"
+                ],
+
+                specs: {
+                    Sections: "Two adjustable panels",
+                    Material: "MS + laminated top",
+                    Wheels: "4 castors",
+                    Tilting: "Multi-angle"
+                },
+
+                application: "Patient support activities in wards & ICUs."
+            },
+
+            // Product Code: MHC 1009
+            {
+                slug: "over-bed-table-knob-adjusted",
+                name: "Over Bed Table (Knob Adjusted)",
+                img: "/bedtable1009.png",
+                desc: "Manual knob-operated over-bed table.",
+                intro: "Height adjustable using durable steel knob mechanism.",
+
+                features: [
+                    "Knob-controlled height",
+                    "Strong welded body",
+                    "Silent castor wheels",
+                    "Large laminated top"
+                ],
+
+                specs: {
+                    Adjustment: "Manual knob",
+                    Material: "MS frame",
+                    Wheels: "4 castors",
+                    Surface: "Laminated wooden top"
+                },
+
+                application: "All patient rooms including long-term care."
+            },
+
+            // Product Code: MHC 1010
+            {
+                slug: "mayo-trolley-knob",
+                name: "Mayo's Trolley (Knob Adjustable)",
+                img: "/bedtable1010.png",
+                desc: "Stainless steel Mayo trolley with height adjustable knob.",
+                intro: "Smooth knob mechanism ensures stable height adjustment for surgical use.",
+
+                features: [
+                    "Removable SS tray",
+                    "Height adjustable knob",
+                    "Anti-rust structure",
+                    "High-quality castor wheels"
+                ],
+
+                specs: {
+                    Material: "Stainless Steel",
+                    Adjustment: "Manual knob",
+                    TrayType: "SS removable tray",
+                    Wheels: "4 castors"
+                },
+
+                application: "OT support, instrument handling."
+            },
+
+            // Product Code: MHC 1011
+            {
+                slug: "mayo-trolley-gear",
+                name: "Mayo's Trolley (Gear Adjustable)",
+                img: "/bedtable1011.png",
+                desc: "Mayo trolley with gear-operated height control.",
+                intro: "High-precision gear mechanism for stable OT assistance.",
+
+                features: [
+                    "Gear height control",
+                    "Heavy-duty SS structure",
+                    "Easy-to-clean tray",
+                    "Premium medical-grade wheels"
+                ],
+
+                specs: {
+                    Material: "Stainless Steel",
+                    Adjustment: "Gear mechanism",
+                    TraySize: "Standard OT size",
+                    Wheels: "4 castors"
+                },
+
+                application: "Operation theatres & critical care units."
+            }
+        ]
+    },
+
+
+
+
+
 
 
     {

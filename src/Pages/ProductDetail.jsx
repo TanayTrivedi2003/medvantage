@@ -1,20 +1,28 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+
+
+
+
+
+import React, { useState } from "react";
+import { useParams, Link } from "react-router-dom";
 import { categoriesData } from "../data/productsData";
-import { Link } from "react-router-dom";
+import { FaWhatsapp, FaShareAlt, FaArrowLeft, FaCheck, FaStar } from "react-icons/fa";
 
 const ProductDetails = () => {
-
     const { slug } = useParams();
+    const [activeTab, setActiveTab] = useState("specs");
 
     const product = categoriesData
         .flatMap(cat => cat.products)
         .find(p => p.slug === slug);
 
+    // Only single image — clean and simple
+    const productImages = [product?.img];
+
     if (!product) {
         return (
-            <div className="p-20 text-center text-xl text-red-500">
-                Product not found
+            <div className="min-h-screen flex items-center justify-center text-xl font-semibold">
+                Product Not Found
             </div>
         );
     }
@@ -32,7 +40,7 @@ const ProductDetails = () => {
                 await navigator.share(shareData);
             } else {
                 await navigator.clipboard.writeText(window.location.href);
-                alert("✅ Product link copied!");
+                alert("Link copied to clipboard!");
             }
         } catch (err) {
             console.log("Share cancelled");
@@ -40,193 +48,182 @@ const ProductDetails = () => {
     };
 
     return (
+        <div className="min-h-screen bg-gradient-to-b from-blue-50/50 to-white">
 
-        <section className="bg-[#F7FBFF] px-6 sm:px-12 lg:px-20 py-16">
+            {/* PAGE HEADER */}
+            <div className="bg-white border-b">
+                <div className="container mx-auto px-4 py-4">
+                    <div className="flex justify-between items-center">
+                        <div className="text-sm text-gray-600 flex gap-2">
+                            <Link to="/" className="hover:text-blue-600">Home</Link>
+                            ›
+                            <Link to="/products" className="hover:text-blue-600">Products</Link>
+                            ›
+                            <span className="text-blue-600 font-medium">{product.name}</span>
+                        </div>
 
-
-            {/* BACK BUTTON */}
-            <Link
-                to="/products"
-                data-aos="fade-right"
-                className="
-    inline-flex items-center gap-2
-    mb-6 px-5 py-2.5
-    bg-white text-[#0A2540] font-semibold
-    rounded-full border border-gray-300
-    shadow hover:shadow-lg
-
-    transition-all duration-300 ease-out
-    hover:-translate-y-[2px] hover:scale-[1.03]
-  "
-            >
-                ← Back to Products
-            </Link>
-
-            {/* ====================== TOP SECTION ====================== */}
-            <div
-                data-aos="fade-up"
-                className="grid grid-cols-1 md:grid-cols-2 gap-10 bg-white p-8 rounded-2xl shadow-md"
-            >
-
-                {/* IMAGE */}
-                <div className="relative overflow-hidden rounded-xl group">
-                    <img
-                        src={product.img}
-                        alt={product.name}
-                        className="
-              w-full h-[360px] object-contain bg-white
-              transition-transform duration-700 ease-out
-              group-hover:scale-110
-            "
-                    />
-
-                    {/* Shine */}
-                    <div className="
-            absolute inset-0
-            bg-gradient-to-r from-transparent via-white/30 to-transparent
-            translate-x-[-100%]
-            group-hover:translate-x-[100%]
-            transition-transform duration-[1200ms]
-          " />
-
-                </div>
-
-                {/* INFO PANEL */}
-                <div>
-
-                    <h1
-                        data-aos="fade-right"
-                        className="text-3xl font-bold text-[#0A2540]"
-                    >
-                        {product.name}
-                    </h1>
-
-                    <p
-                        data-aos="fade-right"
-                        data-aos-delay="100"
-                        className="text-gray-600 mt-2 leading-relaxed"
-                    >
-                        {product.intro}
-                    </p>
-
-                    {/* KEY FEATURES */}
-                    <h3
-                        data-aos="fade-right"
-                        data-aos-delay="200"
-                        className="mt-5 text-xl font-semibold text-[#0A2540]"
-                    >
-                        Key Features
-                    </h3>
-
-                    <ul
-                        data-aos="fade-up"
-                        data-aos-delay="300"
-                        className="list-disc list-inside mt-3 space-y-2 text-gray-700"
-                    >
-                        {product.features.map((f, i) => (
-                            <li key={i}>{f}</li>
-                        ))}
-                    </ul>
-
-                    {/* APPLICATION */}
-                    <div
-                        data-aos="fade-up"
-                        data-aos-delay="400"
-                        className="mt-5"
-                    >
-                        <h3 className="text-xl font-semibold text-[#0A2540] mb-1">
-                            Application
-                        </h3>
-
-                        <p className="text-gray-700 leading-relaxed">
-                            {product.application}
-                        </p>
+                        <span className="px-3 py-1 bg-green-100 text-green-700 text-xs font-semibold rounded-full">
+                            In Stock
+                        </span>
                     </div>
-
                 </div>
             </div>
 
+            <div className="container mx-auto px-4 py-10">
 
-            {/* ====================== BOTTOM ====================== */}
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-10">
-
-                {/* ---------- SPECIFICATIONS ---------- */}
-                <div
-                    data-aos="fade-up"
-                    className="bg-white p-8 rounded-2xl shadow-md
-                     hover:shadow-xl transition-all duration-500"
+                {/* BACK BUTTON */}
+                <Link
+                    to="/products"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-white border border-gray-300 rounded-lg hover:shadow transition mb-6"
                 >
-                    <h2 className="text-xl font-bold text-[#0A2540] mb-4">
-                        Specifications
-                    </h2>
+                    <FaArrowLeft />Back to Products
+                </Link>
 
-                    <div className="grid grid-cols-2 gap-y-3 text-gray-700">
-                        {Object.entries(product.specs).map(([k, v], i) => (
-                            <React.Fragment key={i}>
-                                <p className="font-semibold">{k}</p>
-                                <p>{v}</p>
-                            </React.Fragment>
-                        ))}
+                {/* MAIN GRID */}
+                <div className="grid lg:grid-cols-2 gap-10">
+
+                    {/* LEFT IMAGE */}
+                    <div className="bg-white rounded-2xl shadow-lg overflow-hidden p-10 group">
+                        <img
+                            src={productImages[0]}
+                            alt={product.name}
+                            className="w-full h-96 object-contain animate-fade-in transition-transform duration-700 group-hover:scale-105"
+                        />
+                    </div>
+
+                    {/* <div className="bg-white rounded-2xl shadow-lg overflow-hidden p-10 group flex items-center justify-center">
+                        <img
+                            src={productImages[0]}
+                            alt={product.name}
+                            className="max-h-96 max-w-full object-contain animate-fade-in transition-transform duration-700 group-hover:scale-105"
+                        />
+                    </div> */}
+
+
+                    {/* RIGHT PRODUCT INFO */}
+                    <div className="space-y-6">
+
+                        <h1 className="text-4xl font-bold text-gray-900">{product.name}</h1>
+
+                        {/* Ratings */}
+                        <div className="flex items-center gap-2">
+                            {[1, 2, 3, 4, 5].map(i => (
+                                <FaStar key={i} className="text-yellow-400" />
+                            ))}
+                            <span className="text-sm text-gray-600">(24 reviews)</span>
+                        </div>
+
+                        <p className="text-gray-700 text-lg">{product.intro}</p>
+
+                        {/* BADGES */}
+                        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                            {[
+                                { icon: "🚚", text: "Free Delivery" },
+                                { icon: "🛡️", text: "1 Year Warranty" },
+                                { icon: "🔧", text: "Durable Build" },
+                                { icon: "🏥", text: "Hospital Grade" },
+                            ].map((b, i) => (
+                                <div key={i} className="bg-white border rounded-xl p-3 text-center">
+                                    <div className="text-xl">{b.icon}</div>
+                                    <div className="text-xs mt-1 font-medium">{b.text}</div>
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* FEATURES */}
+                        <div className="p-6 bg-blue-50 rounded-xl">
+                            <h3 className="text-xl font-bold flex items-center gap-2 mb-4">
+                                <FaCheck className="text-green-500" /> Key Features
+                            </h3>
+
+                            <ul className="space-y-2">
+                                {product.features.map((f, i) => (
+                                    <li key={i} className="flex items-start gap-2">
+                                        <span className="w-2 h-2 bg-blue-600 rounded-full mt-2"></span>
+                                        <span>{f}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        {/* ACTION BUTTONS */}
+                        <div className="grid sm:grid-cols-2 gap-4">
+                            <button
+                                onClick={handleShare}
+                                className="flex items-center justify-center gap-3 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition"
+                            >
+                                <FaShareAlt /> Share Product
+                            </button>
+
+                            <a
+                                href={`https://wa.me/917275233309?text=${encodeURIComponent(
+                                    `Hello! I'm interested in: ${product.name}`
+                                )}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center justify-center gap-3 py-3 bg-green-600 text-white font-semibold rounded-xl hover:bg-green-700 transition"
+                            >
+                                <FaWhatsapp /> WhatsApp Quote
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                {/* ---------- CTA ZONE ---------- */}
-                <div
-                    data-aos="fade-up"
-                    data-aos-delay="100"
-                    className="flex flex-col justify-center gap-6"
-                >
+                {/* TABS */}
+                <div className="mt-12">
+                    <div className="flex gap-2 border-b pb-2">
+                        {["specs", "description", "applications"].map(tab => (
+                            <button
+                                key={tab}
+                                onClick={() => setActiveTab(tab)}
+                                className={`px-5 py-2 rounded-t-lg font-medium transition 
+                                ${activeTab === tab
+                                        ? "bg-white border border-b-0 text-blue-600"
+                                        : "hover:bg-blue-50 text-gray-600"
+                                    }`}
+                            >
+                                {tab.toUpperCase()}
+                            </button>
+                        ))}
+                    </div>
 
-                    {/* WHATSAPP CTA */}
-                    <a
-                        href={`https://wa.me/917275233309?text=${encodeURIComponent(
-                            `Hello, I am interested in your product "${product.name}". Please share the best price and specifications.`
-                        )}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="
-              relative overflow-hidden
-              bg-[#25D366] text-white font-bold
-              py-4 rounded-xl text-center
-              shadow-md
+                    {/* TAB CONTENT */}
+                    <div className="p-6 bg-white rounded-b-xl shadow">
 
-              hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.03]
-              transition-all duration-300 ease-out
-            "
-                    >
-                        <span className="relative z-10 text-lg">💬 Chat on WhatsApp</span>
+                        {activeTab === "specs" && (
+                            <div className="grid md:grid-cols-2 gap-4">
+                                {Object.entries(product.specs).map(([k, v], i) => (
+                                    <div key={i} className="p-4 bg-gray-50 rounded-lg">
+                                        <h4 className="font-semibold mb-1">{k}</h4>
+                                        <p className="text-gray-700">{v}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        )}
 
-                        {/* Pulse Glow */}
-                        <span className="
-              absolute inset-0 opacity-0
-              group-hover:opacity-100
-              bg-white/10
-              animate-pulse
-            " />
-                    </a>
+                        {activeTab === "description" && (
+                            <p className="text-gray-700 leading-relaxed">{product.desc}</p>
+                        )}
 
+                        {activeTab === "applications" && (
+                            <p className="text-gray-700 leading-relaxed">{product.application}</p>
+                        )}
 
-                    {/* SHARE CTA */}
-                    <button
-                        onClick={handleShare}
-                        className="
-              bg-gradient-to-r from-[#3A8DFF] to-[#32D3C8]
-              text-white font-bold
-              py-4 rounded-xl text-center
-              shadow-md
-
-              hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.03]
-              transition-all duration-300 ease-out
-            "
-                    >
-                        🔗 Share this Product
-                    </button>
-
+                    </div>
                 </div>
-
             </div>
 
-        </section>
+            {/* Animation CSS */}
+            <style jsx>{`
+                @keyframes fadeIn {
+                    0% { opacity: 0; transform: scale(0.95); }
+                    100% { opacity: 1; transform: scale(1); }
+                }
+                .animate-fade-in {
+                    animation: fadeIn 0.7s ease-out;
+                }
+            `}</style>
+        </div>
     );
 };
 
