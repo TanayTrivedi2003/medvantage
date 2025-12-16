@@ -14,7 +14,8 @@ const codeBaseMap = {
     "ot-surgical-ss": 1100,
     "hospital-trolleys": 1200,
     "ot-scrub-suction": 1300,
-    "ot-instruments": 1400,
+    "autoclaves-sterilization": 1400,
+    "ot-instruments": 1500,
 };
 
 export const categoriesData = [
@@ -3187,7 +3188,7 @@ export const categoriesData = [
             {
                 slug: "ecg-trolley-one-drawer",
                 name: "ECG Trolley with One Drawer",
-                img: "/ecgtrolley1201.png",
+                img: "/trolly1300.png",
                 desc: "ECG trolley with drawer and shelves for medical equipment.",
                 intro: "Compact ECG trolley designed for smooth movement and organized storage.",
 
@@ -3212,7 +3213,7 @@ export const categoriesData = [
             {
                 slug: "medicine-trolley-four-drawer",
                 name: "Medicine Trolley with Four Drawers",
-                img: "/medicinetrolley1202.png",
+                img: "/trolly1301.jpg",
                 desc: "Hospital medicine trolley with four drawers.",
                 intro: "Designed for safe and organized medicine distribution in wards.",
 
@@ -3237,7 +3238,7 @@ export const categoriesData = [
             {
                 slug: "instrument-trolley-three-shelf",
                 name: "Instrument Trolley (Three Shelves)",
-                img: "/instrumenttrolley1203.png",
+                img: "/trolly1303.webp",
                 desc: "Three-shelf stainless steel instrument trolley.",
                 intro: "Ideal for carrying instruments in OT and procedure rooms.",
 
@@ -3262,7 +3263,7 @@ export const categoriesData = [
             {
                 slug: "instrument-trolley-two-shelf",
                 name: "Instrument Trolley (Two Shelves)",
-                img: "/instrumenttrolley1204.png",
+                img: "/trolly1304.webp",
                 desc: "Two-shelf instrument trolley for hospital use.",
                 intro: "Lightweight and durable trolley for daily hospital operations.",
 
@@ -3287,7 +3288,7 @@ export const categoriesData = [
             {
                 slug: "dressing-trolley",
                 name: "Dressing Trolley",
-                img: "/dressingtrolley1205.png",
+                img: "/trolly1305.webp",
                 desc: "Hospital dressing trolley with accessories.",
                 intro: "Designed for efficient wound dressing and patient care.",
 
@@ -3312,7 +3313,7 @@ export const categoriesData = [
             {
                 slug: "monitor-trolley",
                 name: "Monitor Trolley",
-                img: "/monitortrolley1206.png",
+                img: "/trolly1306.webp",
                 desc: "Multi-shelf trolley for patient monitoring equipment.",
                 intro: "Designed to hold monitors and medical devices securely.",
 
@@ -3337,7 +3338,7 @@ export const categoriesData = [
             {
                 slug: "bed-side-screen-three-panel",
                 name: "Bed Side Screen (Three Panel)",
-                img: "/bedsidescreen1207.png",
+                img: "/1307.png",
                 desc: "Three-panel bedside privacy screen.",
                 intro: "Provides privacy for patients in wards and ICUs.",
 
@@ -3362,7 +3363,7 @@ export const categoriesData = [
             {
                 slug: "bed-side-screen-four-panel",
                 name: "Bed Side Screen (Four Panel)",
-                img: "/bedsidescreen1208.png",
+                img: "/1308.webp",
                 desc: "Four-panel movable bedside screen.",
                 intro: "Extra coverage privacy screen for patient areas.",
 
@@ -3387,7 +3388,7 @@ export const categoriesData = [
             {
                 slug: "oxygen-cylinder-trolley",
                 name: "Oxygen Cylinder Trolley",
-                img: "/oxygencylindertrolley1209.png",
+                img: "/1309.png",
                 desc: "Trolley for safe movement of oxygen cylinders.",
                 intro: "Designed for easy handling and transport of oxygen cylinders.",
 
@@ -3412,7 +3413,7 @@ export const categoriesData = [
             {
                 slug: "linen-change-trolley",
                 name: "Linen Change Trolley",
-                img: "/linenchangetrolley1210.png",
+                img: "/1310.webp",
                 desc: "Trolley for collection and transport of used linen.",
                 intro: "Ensures hygienic linen handling in hospitals.",
 
@@ -3437,7 +3438,7 @@ export const categoriesData = [
             {
                 slug: "linen-trolley-canvas-bag",
                 name: "Linen Trolley with Canvas Bag",
-                img: "/linentrolley1211.png",
+                img: "/1311.webp",
                 desc: "Linen trolley fitted with removable canvas bag.",
                 intro: "Designed for hygienic linen collection and transport.",
 
@@ -3462,7 +3463,7 @@ export const categoriesData = [
             {
                 slug: "linen-trolley-plastic-bucket",
                 name: "Linen Trolley with Plastic Bucket",
-                img: "/linentrolley1212.png",
+                img: "/1312.webp",
                 desc: "Linen trolley with durable plastic bucket.",
                 intro: "Easy to clean linen trolley for hospital use.",
 
@@ -3496,7 +3497,7 @@ export const categoriesData = [
             {
                 slug: "one-bay-scrub-sensor-foot-operated",
                 name: "One Bay Scrub Sink (Sensor / Foot Operated)",
-                img: "/scrubsink1220.png",
+                img: "/1313.jpg",
                 desc: "One bay stainless steel scrub sink with sensor or foot operation.",
                 intro: "Designed for hygienic hand washing in operation theatres with touch-free operation.",
 
@@ -3521,7 +3522,7 @@ export const categoriesData = [
             {
                 slug: "one-bay-mini-scrub-sink",
                 name: "One Bay Mini Scrub Sink",
-                img: "/scrubsink1221.png",
+                img: "/1314.jpg",
                 desc: "Compact stainless steel mini scrub sink for OT use.",
                 intro: "Space-saving scrub sink ideal for small OTs and procedure rooms.",
 
@@ -3542,11 +3543,109 @@ export const categoriesData = [
                 application: "OTs, procedure rooms, clinics."
             },
 
+            {
+                slug: "Two-bay-scrub-elbow-operated",
+                name: "Two Bay Scrub Sink (Elbow Operated)",
+                img: "/scrub1313.webp",
+                desc: "Single bay stainless steel scrub sink with elbow operated tap.",
+                intro: "Hygienic elbow-operated scrub sink designed for infection-controlled OT environments.",
+
+                features: [
+                    "Elbow operated tap",
+                    "Seamless SS construction",
+                    "Easy wall mounting",
+                    "Corrosion resistant finish"
+                ],
+
+                specs: {
+                    Material: "Stainless Steel (SS 304)",
+                    Operation: "Elbow operated",
+                    Bays: "Single bay",
+                    Mounting: "Wall mounted"
+                },
+
+                application: "Operation theatres, sterile zones."
+            },
+
+            // Product Code: MHC 1225
+            {
+                slug: "three-bay-scrub-sensor-foot-operated",
+                name: "three Bay Scrub Sink (Sensor / Foot Operated)",
+                img: "/1315.jpg",
+                desc: "Three bay OT scrub sink with sensor or foot operated control.",
+                intro: "Designed for simultaneous hand washing with touch-free operation for enhanced hygiene.",
+
+                features: [
+                    "Sensor / foot operated system",
+                    "Thermostatic mixer",
+                    "Back splash guard",
+                    "Smooth rounded edges"
+                ],
+
+                specs: {
+                    Material: "Stainless Steel (SS 304)",
+                    Operation: "Sensor / Foot operated",
+                    Mixer: "Thermostatic mixer",
+                    Bays: "Three bay"
+                },
+
+                application: "Operation theatres and surgical wash areas."
+            },
+
+            // Product Code: MHC 1226
+            {
+                slug: "Two-bay-scrub-sensor-foot-operated",
+                name: "Two Bay Scrub Sink (Sensor / Foot Operated)",
+                img: "/1316.png",
+                desc: "Two bay scrub sink with sensor and foot operated system.",
+                intro: "High-capacity OT scrub unit suitable for large surgical teams.",
+
+                features: [
+                    "Two bay configuration",
+                    "Sensor / foot operated taps",
+                    "Thermostatic temperature control",
+                    "Heavy-duty SS body"
+                ],
+
+                specs: {
+                    Material: "Stainless Steel (SS 304)",
+                    Operation: "Sensor / Foot operated",
+                    Mixer: "Thermostatic mixer",
+                    Bays: "Two bay"
+                },
+
+                application: "Multi-user operation theatres."
+            },
+
+            // Product Code: MHC 1227
+            {
+                slug: "three-bay-scrub-knee-operated-advanced",
+                name: "Three Bay Scrub Sink (Knee Operated – Advanced)",
+                img: "/1317.png",
+                desc: "Advanced three bay scrub sink with knee operation and accessories.",
+                intro: "Premium OT scrub unit with integrated soap dispenser and geyser support.",
+
+                features: [
+                    "Knee operated control",
+                    "Built-in soap dispenser",
+                    "Thermostatic mixer",
+                    "Inbuilt geyser & jet pressure pump option"
+                ],
+
+                specs: {
+                    Material: "Stainless Steel (SS 304)",
+                    Operation: "Knee operated",
+                    Mixer: "Thermostatic mixer",
+                    Bays: "Three bay"
+                },
+
+                application: "Advanced operation theatres & hospitals."
+            },
             // Product Code: MHC 1222
             {
                 slug: "suction-apparatus-0-50-hp",
                 name: "Suction Apparatus 0.50 H.P",
-                img: "/suction1222.png",
+                img: "/1318.png",
                 desc: "Medical suction apparatus with 0.50 HP motor.",
                 intro: "Powerful suction unit designed for OT and emergency procedures.",
 
@@ -3594,6 +3693,454 @@ export const categoriesData = [
 
         ]
     },
+    {
+        title: "Hospital Furniture & Storage Units",
+        slug: "hospital-furniture-storage",
+
+        products: [
+
+            // Product Code: MHC 1400
+            {
+                slug: "mortuary-chambers",
+                name: "Mortuary Chambers",
+                img: "/1401.jpg",
+                desc: "Stainless steel mortuary chambers designed for safe and hygienic body storage.",
+                intro: "Heavy-duty mortuary chambers built for hospitals and medical institutions.",
+
+                features: [
+                    "Multiple body storage compartments",
+                    "Individual locking system",
+                    "High-grade stainless steel construction",
+                    "Easy to clean hygienic surface"
+                ],
+
+                specs: {
+                    Material: "Stainless Steel",
+                    Compartments: "Multiple",
+                    Locking: "Individual door locks",
+                    Finish: "Matte SS finish"
+                },
+
+                application: "Hospitals, mortuaries, medical colleges."
+            },
+
+            // Product Code: MHC 1401
+            {
+                slug: "instrument-cabinet",
+                name: "Instrument Cabinet",
+                img: "/1402.jpg",
+                desc: "Stainless steel instrument cabinet with glass front door.",
+                intro: "Designed for organized and dust-free storage of medical instruments.",
+
+                features: [
+                    "Glass front door for visibility",
+                    "Adjustable internal shelves",
+                    "Lockable cabinet",
+                    "Stable raised legs"
+                ],
+
+                specs: {
+                    Material: "Stainless Steel",
+                    DoorType: "Glass front with lock",
+                    Shelves: "Adjustable",
+                    Mounting: "Floor standing"
+                },
+
+                application: "Operation theatres, labs, treatment rooms."
+            },
+
+            // Product Code: MHC 1402
+            {
+                slug: "ward-lockers",
+                name: "Ward Lockers",
+                img: "/1403.jpg",
+                desc: "Multi-compartment stainless steel ward lockers for patient use.",
+                intro: "Secure and durable lockers designed for hospital wards.",
+
+                features: [
+                    "Multiple individual lockers",
+                    "Ventilation slots",
+                    "Secure locking system",
+                    "Compact vertical design"
+                ],
+
+                specs: {
+                    Material: "Stainless Steel",
+                    Compartments: "Multiple",
+                    Ventilation: "Yes",
+                    Locking: "Individual locks"
+                },
+
+                application: "Hospital wards, staff areas."
+            },
+
+            // Product Code: MHC 1403
+            {
+                slug: "waiting-chair-3-seater",
+                name: "Waiting Chair – 3 Seater",
+                img: "/1404.webp",
+                desc: "Three seater stainless steel waiting chair with perforated seating.",
+                intro: "Comfortable and durable seating solution for hospital waiting areas.",
+
+                features: [
+                    "3 seater design",
+                    "Perforated SS seating",
+                    "Arm rests on sides",
+                    "Strong SS legs with floor support"
+                ],
+
+                specs: {
+                    Material: "Stainless Steel",
+                    SeatingCapacity: "3 Seater",
+                    ArmRest: "Yes",
+                    Finish: "Polished SS"
+                },
+
+                application: "Waiting areas, reception zones."
+            },
+
+            // Product Code: MHC 1404
+            {
+                slug: "waiting-chair-2-seater",
+                name: "Waiting Chair – 2 Seater",
+                img: "/1405.webp",
+                desc: "Two seater stainless steel waiting chair with arm rests.",
+                intro: "Compact waiting chair suitable for limited space areas.",
+
+                features: [
+                    "2 seater configuration",
+                    "Perforated stainless steel seat",
+                    "Side arm rests",
+                    "Stable anti-slip legs"
+                ],
+
+                specs: {
+                    Material: "Stainless Steel",
+                    SeatingCapacity: "2 Seater",
+                    ArmRest: "Yes",
+                    Finish: "Polished SS"
+                },
+
+                application: "Clinics, OPD waiting areas."
+            },
+
+            // Product Code: MHC 1405
+            {
+                slug: "ward-cabinet",
+                name: "Ward Cabinet",
+                img: "/1406.webp",
+                desc: "Stainless steel ward cabinet with double door storage.",
+                intro: "Spacious cabinet for safe storage of ward supplies and equipment.",
+
+                features: [
+                    "Double door cabinet",
+                    "Lockable storage",
+                    "Smooth stainless steel finish",
+                    "Strong and durable body"
+                ],
+
+                specs: {
+                    Material: "Stainless Steel",
+                    DoorType: "Double door",
+                    Locking: "Yes",
+                    Mounting: "Floor standing"
+                },
+
+                application: "Hospital wards, nursing stations."
+            }
+
+        ]
+    },
+
+    {
+        title: "Autoclaves & Sterilization Equipment",
+        slug: "autoclaves-sterilization",
+
+        products: [
+
+            {
+                slug: "vertical-autoclave",
+                name: "Vertical Autoclave",
+                img: "/1501.jpg",
+                desc: "Electrically heated vertical steam autoclave used for sterilization of surgical instruments, dressings, linen, rubber and laboratory materials under controlled pressure and temperature.",
+                intro: "A heavy-duty vertical autoclave designed for hospitals and laboratories where reliable and consistent steam sterilization is required.",
+
+                features: [
+                    "Vertical steam sterilization system",
+                    "Seamless stainless steel inner chamber",
+                    "Electric immersion heating element",
+                    "Pressure gauge with safety valve",
+                    "Steam release cock and air vent valve",
+                    "Hinged lid with wing nut locking",
+                    "Durable and corrosion-resistant construction"
+                ],
+
+                specs: {
+                    Type: "Vertical Steam Sterilizer",
+                    ChamberMaterial: "Stainless Steel (SS 304)",
+                    OuterBody: "Stainless Steel with insulation",
+                    OperatingPressure: "Up to 15 PSI",
+                    TemperatureRange: "121°C – 134°C",
+                    PowerSupply: "220–240V AC, 50 Hz",
+                    PowerConsumption: "2–3 kW"
+                },
+
+                application: "Hospitals, laboratories, medical colleges, research centers."
+            },
+
+            {
+                slug: "portable-autoclave",
+                name: "Portable Autoclave",
+                img: "/1502.webp",
+                desc: "Compact electrically operated portable steam autoclave with deep drawn stainless steel chamber, ideal for small healthcare facilities and field use.",
+                intro: "Designed for flexibility and ease of use, this portable autoclave offers efficient sterilization with minimal space requirements.",
+
+                features: [
+                    "Portable and compact design",
+                    "Deep drawn seamless stainless steel chamber",
+                    "Electric heating system",
+                    "Leak-proof lid with silicone gasket",
+                    "Pressure gauge and safety valve",
+                    "Easy to operate and maintain"
+                ],
+
+                specs: {
+                    Type: "Portable Steam Autoclave",
+                    ChamberMaterial: "Stainless Steel",
+                    LidType: "Leak-proof with silicone gasket",
+                    PowerSupply: "220V AC, 50 Hz",
+                    PowerConsumption: "1.5–2 kW"
+                },
+
+                application: "Clinics, nursing homes, field hospitals, laboratories."
+            },
+
+            {
+                slug: "autoclave-for-syringe-needles",
+                name: "Autoclave for Syringe & Needles",
+                img: "/1503.jpg",
+                desc: "Special purpose autoclave developed for safe and effective sterilization of syringes, needles and small medical instruments.",
+                intro: "Widely used in vaccination centers and pathology labs, this unit ensures hygienic sterilization with consistent pressure control.",
+
+                features: [
+                    "Specially designed for syringes and needles",
+                    "Heavy-duty aluminium alloy body",
+                    "Compact and space-saving design",
+                    "Fast and uniform steam sterilization",
+                    "Supplied with syringe holding racks",
+                    "Safety valve with pressure gauge",
+                    "Easy handling and maintenance"
+                ],
+
+                specs: {
+                    BodyMaterial: "Aluminium Alloy",
+                    LidMaterial: "Aluminium Alloy",
+                    MaximumPressure: "Up to 15 PSI",
+                    SafetySystem: "Safety valve and pressure gauge",
+                    Capacity: "Approx. 24 Liters",
+                    PowerSupply: "220V AC, 50 Hz"
+                },
+
+                application: "Hospitals, vaccination centers, clinics, pathology laboratories."
+            },
+
+            {
+                slug: "sterilization-drum",
+                name: "Sterilization Drum",
+                img: "/1504.jpg",
+                desc: "Seamless stainless steel sterilization drum used for sterilizing and storing dressings, gauze, gloves and surgical instruments.",
+                intro: "An essential OT accessory designed to maintain sterility while allowing proper steam penetration during autoclaving.",
+
+                features: [
+                    "Seamless stainless steel construction",
+                    "Sliding air vent band for effective sterilization",
+                    "Secure locking lid",
+                    "Rust-free and hygienic finish",
+                    "Easy handling and long service life"
+                ],
+
+                specs: {
+                    Material: "Stainless Steel (SS 304)",
+                    Construction: "Seamless body",
+                    Ventilation: "Air holes with sliding band",
+                    Shape: "Round"
+                },
+
+                application: "Operation theatres, emergency rooms, CSSD departments."
+            },
+
+            {
+                slug: "fumigator",
+                name: "Fumigator",
+                img: "/1505.jpg",
+                desc: "Aerosol based fumigator designed for thorough disinfection and fumigation of operation theatres and critical care areas.",
+                intro: "Ensures high-level infection control by producing fine aerosol particles that penetrate cracks and hidden surfaces.",
+
+                features: [
+                    "Aerosol-based disinfection system",
+                    "High penetration and uniform dispersion",
+                    "Stainless steel body construction",
+                    "Effective against bacteria, spores and fungi",
+                    "Easy to operate and maintain"
+                ],
+
+                specs: {
+                    OperatingMedium: "Formalin + Water",
+                    OutputCapacity: "2–3 Liters per hour",
+                    TankCapacity: "1.5 Liters",
+                    PowerSupply: "220V AC, 50 Hz"
+                },
+
+                application: "Operation theatres, ICUs, isolation rooms, laboratories."
+            },
+
+            {
+                slug: "electrical-sterilizer",
+                name: "Electrical Sterilizer",
+                img: "/1506.jpg",
+                desc: "Semi-automatic electrical sterilizer used for routine sterilization of medical instruments using controlled dry heat.",
+                intro: "Built for reliability and consistent performance, this sterilizer is suitable for clinics and hospitals requiring daily instrument sterilization.",
+
+                features: [
+                    "Fully stainless steel body",
+                    "Thermostatic temperature control",
+                    "Pilot lamp indicator",
+                    "Heavy-duty electric heating element",
+                    "Uniform heat distribution",
+                    "Low maintenance operation"
+                ],
+
+                specs: {
+                    HeatingType: "Electric",
+                    TemperatureControl: "Thermostatic",
+                    PowerSupply: "220–240V AC, 50 Hz",
+                    PowerConsumption: "1500 Watts"
+                },
+
+                application: "Clinics, hospitals, laboratories."
+            },
+            {
+                slug: "cylindrical-autoclave-horizontal-high-pressure",
+                name: "Cylindrical Autoclave (Horizontal High Pressure)",
+                img: "/1507.webp",
+                desc: "Cylindrical horizontal high pressure autoclave designed for efficient steam sterilization of surgical instruments, dressings, linen and laboratory materials under controlled temperature and pressure conditions.",
+                intro: "This heavy-duty cylindrical autoclave is widely used in hospitals and laboratories where consistent, safe and high-capacity sterilization is required. It features a robust stainless steel chamber, automatic pressure locking door and reliable steam circulation for uniform sterilization.",
+
+                features: [
+                    "Horizontal cylindrical steam sterilizer",
+                    "Seamless stainless steel inner chamber",
+                    "Automatic pressure locking safety door",
+                    "Single point control for sterilization cycle",
+                    "Electrical control box with pilot lamps and relays",
+                    "Triple safety system for pressure protection",
+                    "Uniform steam distribution through steam deflector",
+                    "Hydraulically tested at 2.5 times working pressure"
+                ],
+
+                specs: {
+                    ChamberType: "Cylindrical horizontal",
+                    ChamberMaterial: "Stainless Steel",
+                    OperatingPressure: "1.2 – 2.5 kg/cm² (15–22 PSI)",
+                    OperatingTemperature: "121°C",
+                    PowerSupply: "400–440V AC, 3 Phase",
+                    SafetySystem: "Automatic pressure locking with safety valves"
+                },
+
+                application: "Hospitals, operation theatres, medical colleges, research laboratories, pharmaceutical units, central sterile supply departments (CSSD)."
+            },
+            {
+                slug: "rectangular-autoclave-horizontal-high-pressure",
+                name: "Rectangular Autoclave (Horizontal High Pressure)",
+                img: "/1508.jpg",
+                desc: "Rectangular horizontal high pressure autoclave engineered for large-volume steam sterilization of medical instruments, surgical linen and laboratory materials with precise pressure and temperature control.",
+                intro: "This rectangular autoclave is built for high-capacity sterilization requirements in hospitals and medical institutions. It features a robust rectangular chamber, advanced pressure control system and enhanced safety mechanisms to ensure reliable and uniform sterilization performance.",
+
+                features: [
+                    "Horizontal rectangular steam sterilizer",
+                    "Heavy-duty stainless steel chamber construction",
+                    "Radial locking safety door mechanism",
+                    "PID based pressure control system",
+                    "Automatic temperature controller",
+                    "Two-speed exhaust system for efficient drying",
+                    "Triple safety protection system",
+                    "Vacuum breaker and condensate drain system"
+                ],
+
+                specs: {
+                    ChamberType: "Rectangular horizontal",
+                    ChamberMaterial: "Stainless Steel (SS 304 / SS 316)",
+                    SterilizingPressure: "1.2 – 1.5 kg/cm² (15–22 PSI)",
+                    SterilizingTemperature: "121°C",
+                    PowerSupply: "400–440V AC, 3 Phase",
+                    ControlSystem: "Automatic temperature and pressure control"
+                },
+
+                application: "Large hospitals, central sterile supply departments (CSSD), pharmaceutical industries, research institutes, medical colleges, biotechnology laboratories."
+            },
+            {
+                slug: "fully-automatic-high-speed-autoclave",
+                name: "Fully Automatic High Speed Autoclave",
+                img: "/fully-automatic-high-speed-autoclave.jpg",
+                desc: "Fully automatic high speed autoclave designed for rapid and reliable steam sterilization of surgical instruments, medical devices and laboratory items with precise control over temperature, pressure and cycle parameters.",
+                intro: "This advanced autoclave is developed for hospitals, clinics and laboratories that require fast, consistent and validated sterilization cycles. Equipped with a microprocessor-based control system, it ensures accurate monitoring, repeatability and high safety during every sterilization process.",
+
+                features: [
+                    "Fully automatic steam sterilization system",
+                    "High speed sterilization cycles",
+                    "Microprocessor based control unit",
+                    "Automatic monitoring of temperature and pressure",
+                    "Digital display for cycle parameters",
+                    "Built-in safety interlocks",
+                    "Uniform steam penetration for effective sterilization",
+                    "Designed for continuous and heavy-duty operation"
+                ],
+
+                specs: {
+                    ControlSystem: "Microprocessor controlled",
+                    SterilizationTemperature: "121°C – 134°C",
+                    OperatingPressure: "As per sterilization cycle",
+                    ChamberMaterial: "Stainless Steel (SS 304)",
+                    PowerSupply: "220–240V AC / 400V AC (model dependent)",
+                    Display: "Digital display with cycle status"
+                },
+
+                application: "Hospitals, operation theatres, clinics, diagnostic centers, medical colleges, research laboratories, pharmaceutical units."
+            },
+
+            {
+                slug: "vertical-autoclave-high-pressure",
+                name: "Vertical Autoclave (High Pressure)",
+                img: "/1509.jpg",
+                desc: "High pressure vertical autoclave used for sterilization of surgical instruments, dressings, linen, rubber and plastic materials using saturated steam under controlled pressure conditions.",
+                intro: "This vertical high pressure autoclave is designed for dependable sterilization performance in hospitals and laboratories. Its robust stainless steel construction, safety locking system and reliable pressure control ensure safe and efficient daily operation.",
+
+                features: [
+                    "Vertical high pressure steam sterilizer",
+                    "Stainless steel inner chamber and jacket",
+                    "Double safety radial locking arrangement",
+                    "Steam release valve for pressure control",
+                    "Water level indicator with gauge glass",
+                    "Pressure gauge for chamber monitoring",
+                    "Supplied with perforated lifting device",
+                    "Stable and durable floor mounted design"
+                ],
+
+                specs: {
+                    ChamberMaterial: "Stainless Steel",
+                    OperatingPressure: "Up to 15 PSI",
+                    SterilizationTemperature: "121°C",
+                    LockingSystem: "Radial locking safety arrangement",
+                    PowerSupply: "220–240V AC, 50 Hz",
+                    HeatingType: "Electric"
+                },
+
+                application: "Hospitals, clinics, nursing homes, pathology laboratories, medical colleges, research institutions."
+            }
+
+
+        ]
+    },
+
 
 
     {
