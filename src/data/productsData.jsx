@@ -14,8 +14,9 @@ const codeBaseMap = {
     "ot-surgical-ss": 1100,
     "hospital-trolleys": 1200,
     "ot-scrub-suction": 1300,
-    "autoclaves-sterilization": 1400,
-    "ot-instruments": 1500,
+    "hospital-furniture-storage": 1400,
+    "autoclaves-sterilization": 1500,
+
 };
 
 export const categoriesData = [
