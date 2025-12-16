@@ -341,7 +341,7 @@ export const categoriesData = [
 
                 application:
                     "Used in hospital wards and nursing care units for patient positioning and general recovery support."
-            }, 
+            },
             {
                 // MCA Product Code: MHC-110
                 slug: "fowler-bed-mechanical-abs-panels-abs-railing",
@@ -3671,7 +3671,7 @@ export const categoriesData = [
             {
                 slug: "suction-apparatus-0-20-hp",
                 name: "Suction Apparatus 0.20 H.P",
-                img: "/suction1223.png",
+                img: "/1319.jpg",
                 desc: "Compact suction apparatus with 0.20 HP motor.",
                 intro: "Reliable suction unit for minor procedures and clinical use.",
 
