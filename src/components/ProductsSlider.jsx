@@ -37,6 +37,18 @@ const sliderData = [
         img: "./labour-table.jpeg",
         name: "Labour Beds",
     },
+    {
+        img: "./bedsidelocker1001.jpg",
+        name: "Bed Side Locker ",
+    },
+    {
+        img: "./kidneytray1101.jpg",
+        name: "Kidney Tray ",
+    },
+    {
+        img: "./kidneytray1101.jpg",
+        name: "Kidney Tray ",
+    },
     // {
     //     img: "./surgicalLights.jpg",
     //     name: "Surgical Lights",

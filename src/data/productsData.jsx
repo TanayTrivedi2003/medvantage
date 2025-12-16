@@ -206,7 +206,7 @@ export const categoriesData = [
                 // MCA Product Code: MHC-106
                 slug: "icu-mechanical-bed-abs-panels",
                 name: "ICU Mechanical Bed - ABS Panels",
-                img: "/ICUMechanicalBedABSPanel.jpg",
+                img: "/bed106.png",
                 desc: "ICU Bed Mechanical - ABS Panels & Collapsible Railing",
 
                 intro:
@@ -341,7 +341,8 @@ export const categoriesData = [
 
                 application:
                     "Used in hospital wards and nursing care units for patient positioning and general recovery support."
-            }, {
+            }, 
+            {
                 // MCA Product Code: MHC-110
                 slug: "fowler-bed-mechanical-abs-panels-abs-railing",
                 name: "Fowler Bed Mechanical - ABS Panels & ABS Railing",
@@ -4080,7 +4081,7 @@ export const categoriesData = [
             {
                 slug: "fully-automatic-high-speed-autoclave",
                 name: "Fully Automatic High Speed Autoclave",
-                img: "/fully-automatic-high-speed-autoclave.jpg",
+                img: "/1510.png",
                 desc: "Fully automatic high speed autoclave designed for rapid and reliable steam sterilization of surgical instruments, medical devices and laboratory items with precise control over temperature, pressure and cycle parameters.",
                 intro: "This advanced autoclave is developed for hospitals, clinics and laboratories that require fast, consistent and validated sterilization cycles. Equipped with a microprocessor-based control system, it ensures accurate monitoring, repeatability and high safety during every sterilization process.",
 
@@ -4143,67 +4144,67 @@ export const categoriesData = [
 
 
 
-    {
-        title: "OT Instruments & Accessories",
-        slug: "ot-instruments",
+    // {
+    //     title: "OT Instruments & Accessories",
+    //     slug: "ot-instruments",
 
-        products: [
-            {
-                slug: "dressing-drum",
-                name: "Dressing Drum",
-                img: "/wheelchair.jpg",
-                desc: "SS Drum - all sizes available",
+    //     products: [
+    //         {
+    //             slug: "dressing-drum",
+    //             name: "Dressing Drum",
+    //             img: "/wheelchair.jpg",
+    //             desc: "SS Drum - all sizes available",
 
-                intro:
-                    "High quality stainless steel sterilization drum.",
+    //             intro:
+    //                 "High quality stainless steel sterilization drum.",
 
-                features: ["Multiple size options"],
+    //             features: ["Multiple size options"],
 
-                specs: {
-                    Material: "Stainless Steel",
-                },
+    //             specs: {
+    //                 Material: "Stainless Steel",
+    //             },
 
-                application:
-                    "Sterilizing dressings and surgical materials."
-            },
+    //             application:
+    //                 "Sterilizing dressings and surgical materials."
+    //         },
 
-            {
-                slug: "kidney-tray",
-                name: "Kidney Tray",
-                desc: "SS tray - multiple sizes",
+    //         {
+    //             slug: "kidney-tray",
+    //             name: "Kidney Tray",
+    //             desc: "SS tray - multiple sizes",
 
-                intro:
-                    "Medical grade kidney trays in multiple sizes.",
+    //             intro:
+    //                 "Medical grade kidney trays in multiple sizes.",
 
-                features: ["Autoclavable", "Lightweight"],
+    //             features: ["Autoclavable", "Lightweight"],
 
-                specs: {
-                    Material: "Stainless Steel",
-                },
+    //             specs: {
+    //                 Material: "Stainless Steel",
+    //             },
 
-                application:
-                    "Hospitals and surgical departments."
-            },
+    //             application:
+    //                 "Hospitals and surgical departments."
+    //         },
 
-            {
-                slug: "sputum-mug",
-                name: "Sputum Mug",
-                desc: "Stainless steel mug",
+    //         {
+    //             slug: "sputum-mug",
+    //             name: "Sputum Mug",
+    //             desc: "Stainless steel mug",
 
-                intro:
-                    "Sputum mug for patient bedside use.",
+    //             intro:
+    //                 "Sputum mug for patient bedside use.",
 
-                features: ["Autoclavable", "Durable"],
+    //             features: ["Autoclavable", "Durable"],
 
-                specs: {
-                    Material: "Stainless Steel",
-                },
+    //             specs: {
+    //                 Material: "Stainless Steel",
+    //             },
 
-                application:
-                    "General ward use."
-            }
-        ]
-    },
+    //             application:
+    //                 "General ward use."
+    //         }
+    //     ]
+    // },
 ];
 
 /* ✅ AUTO ASSIGN MHA CODES */
